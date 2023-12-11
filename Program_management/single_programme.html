@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="Author" content="Mohammed Technologies Private Limited">
 		<!-- Title -->
-		<title>table Program management</title>
+		<title>single programme</title>
 		<!-- Favicon -->
 		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
 
@@ -25,13 +25,14 @@
 
 		<!--- Style css-->
 		<link href="../assets/css-rtl/style.css" rel="stylesheet">
-
+	
 		<!---Skinmodes css-->
 		<link href="../assets/css-rtl/skin-modes.css" rel="stylesheet" />
 
 		<!--- Animations css-->
 		<link href="../assets/css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
 
 	</head>
 	<body class="main-body app sidebar-mini">
@@ -64,7 +65,6 @@
 							<li class="slide">
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="typcn typcn-folder tx-22"></i><span class="side-menu__label mr-3">ادارة البرامج</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu  ">
-									<li class=""><a class="slide-item" href="table_program_management.html"> البرامج </a></li>
 									<li class=""><a class="slide-item" href="#"> الدورات التدريبية </a></li>
 								</ul>
 							</li>
@@ -360,19 +360,24 @@
 				    		<nav aria-label="breadcrumb">
 								<ol class="breadcrumb breadcrumb-style1">
 									<li class="breadcrumb-item">
-										<a href="../index.html" class="text-muted">الرئيسية</a>
+										<a href="../index.html" >الرئيسية</a>
 									</li>
 									<li class="breadcrumb-item">
-										<a href="#">البرامج</a>
+										<a href="#"class="text-muted">البرامج</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#" class="text-muted"> برنامج تطوير المهارات الشخصية </a>
 									</li>
 								</ol>
 							</nav>
 				    	</div>
 				    	<div class="main-dashboard-header-right">
 				    		<div class=" d-flex">
-								<button class="btn btn-outline-light"> طباعة <i class="icon ion-ios-print"></i></button>
 								<button class="btn btn-outline-light mr-1"> تصدير <i class="ti-stats-up project"></i></button>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1"> +  انشاء برنامج</button>
+								<button class="btn btn-outline-light mr-1"> اعدادات صفحة الويب  <i class="icon ion-ios-settings"></i></button>
+								<button class="btn btn-outline-light mr-1"> اعدادات  <i class="icon ion-ios-settings"></i></button>
+								<button class="btn btn-warning-gradient btn-with-icon mr-1">   اضافة دورة جديدة  <i class="bi bi-plus"></i></button>
+								<button class="btn btn-warning-gradient btn-with-icon mr-1">  عرض صفحة الويب <i class="icon ion-ios-share-alt"></i></button>
 				    		</div>
 				    	</div>
 				    </div>
@@ -444,134 +449,101 @@
 										 <div class="table-responsive">
 											 <table class="table table-striped mg-b-0 text-md-nowrap">
 												 <thead>
-													 <tr class="list-unstyled">
-														 <th>
-															 <i class="typcn typcn-folder"></i>
-															 اسم البرنامج
-														 </th>
-														 <th>
-															 <i class="si si-layers"></i>
-															 عدد الدورات
-														 </th>
-														 <th>
-															 <i class="mdi mdi-account-outline"></i>
-															 العميل
-														 </th>
-														 <th><i class="far fa-calendar"></i> تاريخ البداية </th>
-														 <th><i class="far fa-calendar"></i> تاريخ النهاية </th>
-														 <th>
-															 <svg xmlns="http://www.w3.org/2000/svg" width="16"
-																 height="16" fill="currentColor"
-																 class="bi bi-check-circle" viewBox="0 0 16 16">
-																 <path
-																	 d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-																 <path
-																	 d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
-															 </svg>
-															 الحالة
-														 </th>
+													 <tr>
+														<th>
+															اسم الدورة
+														</th>
+														<th>الفئة</th>
+														<th>اسم المدرب</th>
+														<th> المستوى </th>
+														<th> تاريخ البداية </th>
+														<th>المدة </th>
+														<th>لغة الدورة</th>
+														<!-- Filter -->
+														<th>
+															<div class="dropdown">
+																<i aria-expanded="false" aria-haspopup="true" class="bi bi-filter-square-fill tx-"data-toggle="dropdown" id="dropdownMenuButton" type="button"></i></i>
+																<div  class="dropdown-menu tx-13">
+																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
+																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
+																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
+																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
+																														</div>
+															</div>
+														</th>
 														 <th></th>
-													 </tr>
+													</tr>
 												 </thead>
 												 <tbody id="table-body">
 													<tr>
 														<p class="p-5 text-center d-none" id="empty-message">لا توجد بيانات لعرضها</p>
 													</tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-success-transparent text-success">
-																 فعال </span></td>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-warning-transparent text-warning">تحت
-																 المراجعة</span>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
- 
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td>
-															 <span
-																 class="tag tag-rounded bg-primary-transparent text-primary">في
-																 المعالجة</span>
-														 </td>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-primary-transparent text-primary">
-																 في المعالجة </span>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
- 
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-success-transparent text-success">
-																 فعال </span></td>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-warning-transparent text-warning">تحت
-																 المراجعة</span>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
- 
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td>
-															 <span
-																 class="tag tag-rounded bg-primary-transparent text-primary">في
-																 المعالجة</span>
-														 </td>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
-													 <tr class="table-rows">
-														 <td scope="row">برنامج التدريب الأساسي.</td>
-														 <td>3</td>
-														 <td class="client-name">على حسن على</td>
-														 <td>12/06/2023</td>
-														 <td>12/06/2023</td>
-														 <td><span
-																 class="tag tag-rounded bg-primary-transparent text-primary">
-																 في المعالجة </span>
-														 <td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
-													 </tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row">برنامج التدريب الأساسي.</td>
+														<td>3</td>
+														<td class="client-name">على حسن على</td>
+														<td> مستوي اول </td>
+														<td>12/06/2023</td>
+														<td>5ايام</td>
+														<td> عربي </td>
+														<td><i class="far fa-eye tx-15"></i></td>
+														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
+													</tr>
 												 </tbody>
 											 </table>
 										 </div>
