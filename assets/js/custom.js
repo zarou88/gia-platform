@@ -316,83 +316,16 @@ $(function() {
 	
 	
 	
-	// ______________Skins 
-		
-	////////////////////////////////////////////////////
-	/*  ############# Horizontal version ########*/
-	//////////////////////////////////////////////////
-
-
-	/* ###########  Horizontal Light  ###########*/
-
-	// $('body').addClass('horizontal-light'); //
-
-	/* ###########  Horizontal color  ###########*/
-
-	// $('body').addClass('horizontal-color'); //
-
-	/* ###########  Horizontal dark  ###########*/
-
-	// $('body').addClass(' horizontal-dark'); //
-
-	/* ###########  Horizontal gradient  ###########*/
-
-	// $('body').addClass(' horizontal-gradient'); //
-		
-		
-	////////////////////////////////////////////////////
-	/*  ############# Leftmenu version ########*/
-	//////////////////////////////////////////////////
-
-	/* ###########  Leftmenu Light  ###########*/
-
-	// $('body').addClass('leftmenu-light'); //
-
-	/* ###########  Leftmenu color  ###########*/
-
-	//  $('body').addClass('leftmenu-color');  //
-
-	/* ###########  Leftmenu dark  ###########*/
-
-	// $('body').addClass('leftmenu-dark'); //
-
-	/* ###########  Leftmenu gradient  ###########*/
-
-	// $('body').addClass('leftmenu-gradient'); //
-
-
-	////////////////////////////////////////////////////
-	/*  ############# Leftmenu Light Image ########*/
-	//////////////////////////////////////////////////
-		
-		
-	/* ###########  backgroundimage-1  ###########*/
-
-	// $('body').addClass(' leftbgimage1'); //
-
-	/* ###########  backgroundimage-2  ###########*/
-
-	// $('body').addClass(' leftbgimage2'); //
-
-	/* ###########  backgroundimage-3  ###########*/
-
-	// $('body').addClass(' leftbgimage3'); //
-
-	/* ###########  backgroundimage-4  ###########*/
-
-	// $('body').addClass(' leftbgimage4'); //
-
-	/* ###########  backgroundimage-5	  ###########*/
-
-	// $('body').addClass(' leftbgimage5'); //
-
-
-	////////////////////////////////////////////////////
-	/*  ############# Body Style ########*/
-	//////////////////////////////////////////////////
-
-	// $('body').addClass(' body-style1'); //
-	
+	document.getElementById('copyButton').addEventListener('click', function() {
+		var table = document.getElementById('cartprogramme');
+		var range = document.createRange();
+		range.selectNode(table);
+		window.getSelection().removeAllRanges();
+		window.getSelection().addRange(range);
+		document.execCommand('copy');
+		window.getSelection().removeAllRanges();
+		alert('تمت عملية النسخ!');
+	  });
 	
 });
 	

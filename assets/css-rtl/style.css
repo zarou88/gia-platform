@@ -25528,7 +25528,7 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
   border-radius: 3px; }
 
 .login, .image {
-  min-height: 100vh; }
+  margin-top: 30px; }
 
 .construction .form-control {
   border-radius: 4px;
@@ -52583,6 +52583,19 @@ flex-wrap: wrap; } }
     flex-wrap: wrap; }
    
    }
+   @media (max-width: 658px) {
+    .signup{
+    width: 100% !important;
+      
+    ; } }
+
+    @media (max-width: 600px) {
+      .signup{
+      width: 100% !important;
+        
+      ; } }
+
+
 @media (max-width: 658px) {
   .canvas{
     padding-left: 30% ;
@@ -52670,7 +52683,7 @@ flex-wrap: wrap; } }
 
 
 /* ############################################################################### */
-.side-menu__item,h1,h2,h3,h4,h5,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
+.side-menu__item,h1,h2,a,h3,h4,h5,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
   font-family: 'Cairo', sans-serif;
 }
 p,span,td,button,label,option,select{font-family: 'Tajawal', sans-serif;}
@@ -52747,4 +52760,17 @@ fieldset {
     border-radius: 0px !important;
     border: 0px !important;
   }
+  .fa-clone,.bi-trash3,.bi-floppy{font-size: 13px !important}
+
+
+  .pageSignup{
+   
+     
+   margin: auto;
+      align-items: center;
+      flex-direction: column;
+      /* justify-content: flex-start; */
+      position: relative;
+      direction: rtl;
   
+  }
