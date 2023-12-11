@@ -52673,7 +52673,7 @@ flex-wrap: wrap; } }
 .side-menu__item,h1,h2,h3,h4,h5,.main-content-label,.panel-tabs a ,.list-unstyled{
   font-family: 'Cairo', sans-serif;
 }
-p,span,td,button,label{font-family: 'Tajawal', sans-serif;}
+p,span,td,button,label,option,select{font-family: 'Tajawal', sans-serif;}
 .wizard > .steps {
   padding: 30px;
   position: absolute;
@@ -52715,4 +52715,4 @@ fieldset {
 
 
   
-  
+  .page{min-height: auto !important;}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -55,12 +56,14 @@
 
 
 
-<link rel="stylesheet" href="../assets/plugins/wizards/css/form-elements.css">
-
+        <link rel="stylesheet" href="../assets/plugins/wizards/css/form-elements.css">
         <link rel="stylesheet" href="../assets/plugins/wizards/css/style.css">
 
-<style>
-</style>
+		<link rel="stylesheet" href="../assets/plugins/select_mul/css/style.css">
+		<link rel="stylesheet" href="../assets/plugins/select_mul/css/semantic.min.css">
+
+
+
 	</head>
 
 	<body class="main-body app sidebar-mini">
@@ -490,7 +493,23 @@
 												</div>
 	
 												<div class="col-lg-6">
-													<p class="mg-b-10">صلاحيات الوصول 1</p>
+													<div class="inline w-100 field">
+														<label> محتوي 2 </label>
+														<select name="skills" multiple="" class="label ui selection fluid dropdown">
+															<option value="2">
+																انطلق نحو علم الادارة
+															</option>
+															<option value="1">
+																انطلق نحو علم الادارة
+															</option>	
+															<option value="3">
+																انطلق نحو علم الادارة
+															</option>
+															
+														  
+														</select>
+													</div>
+													<!-- <p class="mg-b-10">صلاحيات الوصول 1</p>
 													<select class="form-control select2" multiple="multiple">
 														<option selected value="Firefox">
 															محمد سعيد 
@@ -498,7 +517,7 @@
 														<option value="Chrome">
 															احمد علي
 														</option>
-													</select>
+													</select> -->
 												</div>
 											</div>
 											<!-- closed row -->
@@ -785,11 +804,7 @@
 
 		<!-- Back-to-top -->
 		<a href="#top" id="back-to-top"><i class="ti-angle-double-up"></i></a>
-        <script>
-        	$(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
-        });
-        </script>
+
 
 		<!-- JQuery min js -->
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
@@ -811,16 +826,9 @@
 
 		<!--Internal  spectrum-colorpicker js -->
 		<script src="../assets/plugins/spectrum-colorpicker/spectrum.js"></script>
-
-		<!-- Internal Select2.min js -->
-		<script src="../assets/plugins/select2/js/select2.min.js"></script>
-
 		
 		<!--Internal  jquery-simple-datetimepicker js -->
 		<script src="../assets/plugins/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
-
-		<!-- Ionicons js -->
-		<script src="../assets/plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
 
 		<!--Internal  pickerjs js -->
 		<script src="../assets/plugins/pickerjs/picker.min.js"></script>
@@ -839,6 +847,10 @@
 		<!-- Left-menu js-->
 		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
 
+		
+		<!-- Internal Select2.min js -->
+		<script src="../assets/plugins/select2/js/select2.min.js"></script>
+
 		<!-- Right-sidebar js -->
 		<script src="../assets/plugins/sidebar/sidebar-rtl.js"></script>
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
@@ -856,15 +868,16 @@
 		<!-- Internal form-elements js -->
 		<script src="../assets/js/form-elements.js"></script>
 
+        <!-- wizard -->
+        <script src="../assets/plugins/wizards/js/jquery.backstretch.min.js"></script>
+        <script src="../assets/js/jquery.backstretch.min.js"></script>
+        <script src="../assets/plugins/wizards/js/retina-1.1.0.min.js"></script>
+        <script src="../assets/plugins/wizards/js/scripts.js"></script>
+        
+        <!-- select mul -->
+        <script src="../assets/plugins/select_mul/js/semantic.min.js"></script>
+        <script src="../assets/plugins/select_mul/js/main.js"></script>
 
-
-		<!-- <link rel="stylesheet" href="../assets/plugins/select2/css/select2.min.css"> -->
-
-<!-- wizard -->
-<script src="../assets/plugins/wizards/js/jquery.backstretch.min.js"></script>
-<script src="../assets/js/jquery.backstretch.min.js"></script>
-<script src="../assets/plugins/wizards/js/retina-1.1.0.min.js"></script>
-<script src="../assets/plugins/wizards/js/scripts.js"></script>
 
 	</body>
 </html>
