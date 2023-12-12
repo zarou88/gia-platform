@@ -326,6 +326,35 @@ $(function() {
 		window.getSelection().removeAllRanges();
 		alert('تمت عملية النسخ!');
 	  });
+
+	//edit_course page  input to Not readOnly
+	document.addEventListener("DOMContentLoaded", function() {
+		var editButtons = document.querySelectorAll(".edit-button");
+  
+		editButtons.forEach(function(button) {
+		  button.addEventListener("click", function() {
+			var inputField = button.parentNode.previousElementSibling;
+			inputField.readOnly = false;
+			inputField.classList.remove("readonly");
+			inputField.focus();
+		  });
+		});
+	  });
 	
 });
 	
+
+
+			{/* //edit_course page  input to Not readOnly */}
+			document.addEventListener("DOMContentLoaded", function() {
+			  var editButtons = document.querySelectorAll(".edit-button");
+		
+			  editButtons.forEach(function(button) {
+				button.addEventListener("click", function() {
+				  var inputField = button.parentNode.previousElementSibling;
+				  inputField.readOnly = false;
+				  inputField.classList.remove("readonly");
+				  inputField.focus();
+				});
+			  });
+			});
