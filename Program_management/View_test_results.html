@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,16 +6,12 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
-		<meta name="Author" content="Spruko Technologies Private Limited">
+		<meta name="Author" content="Mohammed Technologies Private Limited">
 		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
 
 		<!-- Title -->
-		<title> create_programme</title>
-
-		<!-- Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@400&display=swap" rel="stylesheet">
+		<title> View test results </title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
 		<!-- Favicon -->
 		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
@@ -24,14 +19,8 @@
 		<!-- Icons css -->
 		<link href="../assets/css/icons.css" rel="stylesheet">
 
-		<!-- Internal Select2 css -->
-		<link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
-
-		<!--Internal  Datetimepicker-slider css -->
-		<link href="../assets/plugins/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
-		
-		<!-- Internal Spectrum-colorpicker css -->
-		<link href="../assets/plugins/spectrum-colorpicker/spectrum.css" rel="stylesheet">
+		<!-- Internal Morris Css-->
+		<link href="../assets/plugins/morris.js/morris.css" rel="stylesheet">
 
 		<!--  Right-sidemenu css -->
 		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
@@ -52,15 +41,12 @@
 		<!--- Animations css-->
 		<link href="../assets/css/animate.css" rel="stylesheet">
 
+		
 
-
-
-
-        <link rel="stylesheet" href="../assets/plugins/wizards/css/form-elements.css">
-        <link rel="stylesheet" href="../assets/plugins/wizards/css/style.css">
-
-		<link rel="stylesheet" href="../assets/plugins/select_mul/css/style.css">
-		<link rel="stylesheet" href="../assets/plugins/select_mul/css/semantic.min.css">
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@400&display=swap" rel="stylesheet">
 
 
 
@@ -76,7 +62,6 @@
 		
 		<!-- Page -->
 		<div class="page">
-		
 			<!-- main-sidebar -->
 			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 			<aside class="app-sidebar sidebar-scroll">
@@ -98,7 +83,6 @@
 							<li class="slide">
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="typcn typcn-folder tx-22"></i><span class="side-menu__label mr-3">ادارة البرامج</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu  ">
-									<li class=""><a class="slide-item" href="table_program_management.html"> البرامج </a></li>
 									<li class=""><a class="slide-item" href="#"> الدورات التدريبية </a></li>
 								</ul>
 							</li>
@@ -146,7 +130,6 @@
 
 			<!-- main-content -->
 			<div class="main-content app-content">
-
 				<!-- main-header opened -->
 				<div class="main-header sticky side-header nav nav-item">
 					<div class="container-fluid">
@@ -394,402 +377,469 @@
 				    		<nav aria-label="breadcrumb">
 								<ol class="breadcrumb breadcrumb-style1">
 									<li class="breadcrumb-item">
-										<a href="../index.html" class="text-muted">الرئيسية</a>
+										<a href="../index.html" >الرئيسية</a>
 									</li>
 									<li class="breadcrumb-item">
-										<a href="#">البرامج</a>
+										<a href="#"class="text-muted">البرامج</a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#" class="text-muted"> الدورات </a>
+									</li>
+									<li class="breadcrumb-item">
+										<a href="#" class="text-muted">   عرض نموذج الاجابات </a>
 									</li>
 								</ol>
 							</nav>
 				    	</div>
-				    	<div class="main-dashboard-header-right">
-				    		<div class=" d-flex">
-								<button class="btn btn-outline-light"> طباعة <i class="icon ion-ios-print"></i></button>
-								<button class="btn btn-outline-light mr-1"> تصدير <i class="ti-stats-up project"></i></button>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1"> +  انشاء برنامج</button>
-				    		</div>
-				    	</div>
+				    	
 				    </div>
 				    <!-- /breadcrumb -->
 				</div>
 				<!-- /main-header -->
-				<br><br><br><br>
 				<!-- container opened -->
+				<br><br><br>
 				<div class="container-fluid mt-5">
-
 					<!-- row -->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="card">
-								<div class="card-body">
-									<!-- form opend -->
-									<form role="form" action="" method="post" class="f1">
-										<!--open one pag    -->
-										<fieldset>
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="exampleInputEmail1">اسم البرنامج</label>
-														<input class="form-control"  required="" type="text">
-													</div>
+					<div class="row row-sm sales-cardSmall">
+						<!-- col  Right-->
+						<div class="col-lg-7 col-sm-12">
+							<!-- row cardSmall -->
+							<div class="row">
+								<div class="col-lg-4 col-sm-6">
+									<div class="card">
+										<div class="card-body  iconfont text-right d-flex justify-content-between">
+											<div class="d-flex mb-0">
+												<div class="card-chart bg-warning-transparent brround mt-0">
+													<i class="typcn typcn-group-outline text-warning tx-24"></i>
 												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="exampleInputEmail1">محتوي 1 </label>
-													<input class="form-control"  required="" type="text">	
+												<div class="">
+													<p class="mb-2 tx-12 text-muted"> الأجابات الصحيحة  </p>
+													<div class="">
+														<h4 class="mb-1 font-weight-bold">20</h4>
+													</div>	
 												</div>
 											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-3">
-													<label for="exampleInputEmail1">اسم العميل</label>
-													<input class="form-control"  required="" type="text" value="This is input">
-												</div>
-												<div class="col-lg-3">
-													<label for="exampleInputEmail1">اسم المستخدم</label>
-													<div class="input-group mb-3">
-														<div class="input-group-prepend">
-															<span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account-search"></i></span>
-														</div><input aria-describedby="basic-addon1" aria-label="Username" class="form-control" type="text">
-													</div>										
-												</div>
-	
-												<div class="col-lg-6">
-													<p class="mg-b-10">محتوي 2</p>
-													<input class="form-control"  required="" type="text">
+											<div class=" mt-3">
+												<div class="dropdown">
+													<i aria-expanded="false" aria-haspopup="true" class="mdi mdi-dots-vertical"
+													data-toggle="dropdown" id="dropdownMenuButton"></i>
+													<div  class="dropdown-menu tx-13">
+														<a class="dropdown-item" href="#">تفاصيل</a>
+														<a class="dropdown-item" href="#">تعديل</a>
+													</div>
 												</div>
 											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-3 mb-3">
-													<label for="exampleInputEmail1"> يبدأ في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
-															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<div class="card">
+										<div class="card-body iconfont text-right d-flex justify-content-between">
+											<div class="d-flex mb-0">
+												<div class="card-chart bg-warning-transparent brround ml- mt-0">
+													<i class="typcn typcn-document-text text-warning tx-24"></i>
 												</div>
-	
-												<div class="col-lg-3 mb-3">
-													<label for="exampleInputEmail1"> ينتهي في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
-															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
-												</div>
-	
-												<div class="col-lg-6">
-													<div class="inline w-100 field">
-														<label> صلاحيات الوصول1 </label>
-														<select name="skills" multiple="" class="label ui selection fluid dropdown">
-															<option value="2">
-																انطلق نحو علم الادارة
-															</option>
-															<option value="1">
-																انطلق نحو علم الادارة
-															</option>	
-															<option value="3">
-																انطلق نحو علم الادارة
-															</option>
-															
-														  
-														</select>
-													</div>
-													<!-- <p class="mg-b-10">صلاحيات الوصول 1</p>
-													<select class="form-control select2" multiple="multiple">
-														<option selected value="Firefox">
-															محمد سعيد 
-														</option>
-														<option value="Chrome">
-															احمد علي
-														</option>
-													</select> -->
-												</div>
-											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 col-md-12 col-sm-12">
-													<p class="mg-b-10">حدد قالب الدعوة</p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															G001
-														</option>	
-													</select>
-												</div>
-	
-												<div class="col-lg-6 col-md-12 col-sm-12">
+												<div class="">
+													<p class="mb-2 tx-12 text-muted"> الأجابات الخاطئة </p>
 													
-													<p class="mg-b-10">طريقة التواصل</p>
-													<select class="form-control select2">
-													    <option value="Firefox">
-													    	واتس اب
-													    </option>	
-													</select>
+														<h4 class="mb-1 font-weight-bold">13</h4>
 													
 												</div>
 											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> طريقة التسجيل </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															كيو ان عند الحضور
-														</option>	
-													</select>
-												</div>
-	
-												<div class="col-lg-6">
-													<p class="mg-b-10">  طريقة الحضور </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															عن بعد
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6">
-													<p class="mg-b-10">  عرض اسم المدعو </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row">
-												<div class="col-lg-6">
-													<p>هوية العرض</p>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												
-												<div class="col-lg-6 mb-3">
-													<label for="exampleInputEmail1"> اللون </label>
-													<input class="form-control" required="" type="text">
-												</div>
-												
-												<div class="col-lg-3 mb-3">
-													<label for="exampleInputEmail1"> ملف الشعار </label>
-													<div class="custom-file">
-														<input class="custom-file-input" id="customFile" type="file">
-														<label class="custom-file-label" for="customFile">Drop files here⇬</label>
-													</div>
-												</div>
-												<div class="col-lg-3">
-													<label for="exampleInputEmail1"> ملف البرنامج </label>
-													<div class="custom-file">
-														<input class="custom-file-input" type="file">
-														<label class="custom-file-label" for="customFile">Drop files here⇬</label>
+											<div class=" mt-3">
+												<div class="dropdown">
+													<i aria-expanded="false" aria-haspopup="true" class="mdi mdi-dots-vertical"
+													data-toggle="dropdown" id="dropdownMenuButton"></i>
+													<div  class="dropdown-menu tx-13">
+														<a class="dropdown-item" href="#">تفاصيل</a>
+														<a class="dropdown-item" href="#">تعديل</a>
 													</div>
 												</div>
 											</div>
-											<!-- closed row -->
-
-											<br>
-
-											<div class="f1-buttons d-flex justify-content-between mt-5">
-												<button type="button" class="btn btn-previous" disabled><i class="ti-angle-double-right"></i> السابق </button>
-
-												<!-- point steps open -->
-												<div class="f1-steps d-flex justify-content-evenly">
-													<div class="f1-step">
-														<div class="f1-step-icon"></div>
-													</div>
-													<div class="f1-step active">
-														<div class="f1-step-icon"></div>	
-													</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-12">
+									<div class="card">
+										<div class="card-body iconfont text-right d-flex justify-content-between">
+											<div class="d-flex mb-0">
+												<div class="card-chart bg-warning-transparent brround ml-2 mt-0">
+													<i class="bi bi-cash-stack text-warning tx-24"></i>
 												</div>
-									            <!-- point steps closed -->
-												<button class="btn-next btn btn-warning-gradient btn-with-icon mr-1">التالي</button>	
-											</div>
-										</fieldset>
-			                            <!--closed pag  one   -->
-
-
-										<!--open pag two   -->
-										<fieldset>
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> اسم الدورة </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<p class="mg-b-10"> لغة الدورة  </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															العربية
-												        </option>
-														<option value="Firefox">
-															الانجليزية
-												        </option>		
-													</select>
+												<div class="">
+													<p class="mb-2 tx-12 text-muted"> نسبة الأجتياز </p>
+													<div class="d-flex">
+														<h4 class="mb-1 font-weight-bold">85%</h4>
+													</div>	
 												</div>
 											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> الفئة </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="example"> عدد المقاعد المتاحة </label>
-													<input class="form-control" required="" type="text">	
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 mb-3">
-													<label for="example"> يبدأ في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
-															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> هل يوجد اختبار </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-														<option value="Firefox">
-															لا
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6">
-													<label for="example"> المدة </label>
-													<input class="form-control"  required="" type="text" value="This is input">
-												</div>
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> هل يوجد شهادة</p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-														<option value="Firefox">
-															لا
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> اسم المدرب </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="example"> نسبة الحصول على الشهادة  </label>
-													<input class="form-control" required="" type="number">	
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<label for="example"> اسم المنسق </label>
-													<input class="form-control"  required="" type="text">
-												</div>
-												<div class="col-lg-6">
-													<label for="example"> شروط اضافية  </label>
-													<div class="row">
-														<div class="col-lg-5">
-															<label class="ckbox"><input type="checkbox"><span>ملى استبيان الحضور</span></label>
-														</div>
-														<div class="col-lg-4 mg-t-20 mg-lg-t-0">
-															<label class="ckbox"><input checked="" type="checkbox"><span> صورة شخصية </span></label>
-														</div>
-														<div class="col-lg-3 mg-t-20 mg-lg-t-0">
-															<label class="ckbox"><input disabled="" type="checkbox"><span> دراسة </span></label>
-														</div>
+											<div class=" mt-3">
+												<div class="dropdown">
+													<i aria-expanded="false" aria-haspopup="true" class="mdi mdi-dots-vertical"
+													data-toggle="dropdown" id="dropdownMenuButton"></i>
+													<div  class="dropdown-menu tx-13">
+														<a class="dropdown-item" href="#">تفاصيل</a>
+														<a class="dropdown-item" href="#">تعديل</a>
 													</div>
 												</div>
 											</div>
-											<!-- closed row -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--closed row cardSmall -->
 
-											<br>
-											<div class="f1-buttons d-flex justify-content-between mt-5">
-												<button type="button" class="btn btn-previous"><i class="ti-angle-double-right"></i> السابق </button>
-												<!-- point steps open -->
-												<div class="f1-steps d-flex justify-content-evenly">
-													<div class="f1-step activated">
-														<div class="f1-step-icon "></div>
-													</div>
-													<div class="f1-step activated">
-														<div class="f1-step-icon "></div>	
-													</div>
+							<!-- row -->
+							<div class="row">
+								<div class="col-lg-6 col-sm-12">
+									<div class="card">
+										<div class="card-body">
+											<h5 class="card-title mb-5 pb-4"> ملفات الأختبار </h5>
+											<div class="d-flex">
+												<div class="ml-4">
+													<i class="bi bi-file-earmark-word-fill tx-26"></i>
+													<p>ملف 1</p>
 												</div>
-									            <!-- point steps closed -->
-												<button class="btn-next btn btn-warning-gradient btn-with-icon mr-1">التالي</button>	
+
+												<div class="ml-4">
+													<i class="bi bi-file-earmark-word-fill tx-24"></i>
+													<p>ملف2</p>
+												</div>
+												<div class="ml-4">
+													<i class="bi bi-file-earmark-word-fill tx-24"></i>
+													<p>ملف4</p>
+												</div>
+												<div class="ml-4">
+													<i class="bi bi-file-earmark-word-fill tx-24"></i>
+													<p>ملف5</p>
+												</div>
 											</div>
-										</fieldset>
-										<!--closed pag tow   -->
-									</form>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-12">
+									<div class="card p-0">
+										<div class="card-body pt-0">
+											<!-- col-6 -->
+								            <div id="chart" class=""></div>
+								            <h5 class="text-center"> درجة الأختبار </h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- colse row -->
+
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-body">
+											<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+										</div>
+									</div>
+
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- closed row -->
+						<!-- closed col -->
 
+						<!-- col Table left-->
+						<div class="col-lg-5 col-sm-12">
+							<!-- table -->
+					        <div class="col-lg-12">
+					        	<div class="card">
+									<div class="card-body">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th class="tx-">
+															رقم السؤال 
+														</th>
+														<th>
+															 الأجابة الصحيحة
+														</th>
+														<th>
+															اجابة المشارك
+														</th>
+													</tr>
+												</thead>
+												<tbody id="table-body">
+												    <tr>
+													   <p class="p-5 text-center d-none" id="empty-message">لا توجد بيانات لعرضها</p>
+												    </tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-danger-transparent"> أ  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-danger-transparent"> أ  </td>
+													</tr>
+													
+												</tbody>
+											</table>
+										</div>
+											
+										
+									</div>
+								</div>
+					        </div>
+					        <!-- table -->
+
+					        <!--open filter bottom  -->
+					        <div class="col-12">
+					        	<div class="card mg-b-20">
+					        		<div class="card-body d-flex p-3">
+					        			<ul class="pagination mb-0">												
+					        				<li class="page-item"><button class="btn btn-previous" id="table-paganite-next"><i class="ti-angle-double-right"></i></button></li>
+					        				<li class="page-item m-2" id="table-pages">1/10</li>
+					        				<li class="page-item"><button class="btn btn-previous"  id="table-paganite-prev"><i class="ti-angle-double-left"></i></button>
+					        				</li>
+					        			</ul>
+					        			<div class="d-flex">
+									<div class="d-block mt-2"> عرض</div>
+									<select class="form-control select2-no-search mr-0 table-rows-number">
+										<option value="all">
+											الكل
+										</option>
+										<option value="1">
+											1
+										</option>
+										<option value="2">
+											2
+										</option>
+										<option value="3">
+											3
+										</option>
+										<option value="10" selected>
+											10
+										</option>
+										<option value="50">
+											50
+										</option>
+										<option value="100">
+											100
+										</option>
+									</select>
+					        			</div>
+					        			<div class="mr-auto tx-15 mt-2">
+					        				<span id="table-status">1-6 of 100</span>
+					        			</div>
+					        		</div>
+					        	</div>
+					        </div>
+					        <!--closed filter bottom  -->
+						</div>
+						<!-- closed col -->
+
+					</div>
+					<!-- row closed -->
 				</div>
-				<!-- container closed -->
+				<!-- Container closed -->
 			</div>
 			<!-- main-content closed -->
 
+			
+
+			<!-- Message Modal -->
+			<div class="modal fade" id="chatmodel" tabindex="-1" role="dialog"  aria-hidden="true">
+				<div class="modal-dialog modal-dialog-right chatbox" role="document">
+					<div class="modal-content chat border-0">
+						<div class="card overflow-hidden mb-0 border-0">
+							<!-- action-header -->
+							<div class="action-header clearfix">
+								<div class="float-left hidden-xs d-flex ml-2">
+									<div class="img_cont mr-3">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img" alt="img">
+									</div>
+									<div class="align-items-center mt-2">
+										<h4 class="text-white mb-0 font-weight-semibold">Daneil Scott</h4>
+										<span class="dot-label bg-success"></span><span class="mr-3 text-white">online</span>
+									</div>
+								</div>
+								<ul class="ah-actions actions align-items-center">
+									<li class="call-icon">
+										<a href="" class="d-done d-md-block phone-button" data-toggle="modal" data-target="#audiomodal">
+											<i class="si si-phone"></i>
+										</a>
+									</li>
+									<li class="video-icon">
+										<a href="" class="d-done d-md-block phone-button" data-toggle="modal" data-target="#videomodal">
+											<i class="si si-camrecorder"></i>
+										</a>
+									</li>
+									<li class="dropdown">
+										<a href="" data-toggle="dropdown" aria-expanded="true">
+											<i class="si si-options-vertical"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><i class="fa fa-user-circle"></i> View profile</li>
+											<li><i class="fa fa-users"></i>Add friends</li>
+											<li><i class="fa fa-plus"></i> Add to group</li>
+											<li><i class="fa fa-ban"></i> Block</li>
+										</ul>
+									</li>
+									<li>
+										<a href=""  class="" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true"><i class="si si-close text-white"></i></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- action-header end -->
+
+							<!-- msg_card_body -->
+							<div class="card-body msg_card_body">
+								<div class="chat-box-single-line">
+									<abbr class="timestamp">February 1st, 2019</abbr>
+								</div>
+								<div class="d-flex justify-content-start">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Hi, how are you Jenna Side?
+										<span class="msg_time">8:40 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end ">
+									<div class="msg_cotainer_send">
+										Hi Connor Paige i am good tnx how about you?
+										<span class="msg_time_send">8:55 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/9.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										I am good too, thank you for your chat template
+										<span class="msg_time">9:00 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end ">
+									<div class="msg_cotainer_send">
+										You welcome Connor Paige
+										<span class="msg_time_send">9:05 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/9.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/9.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/9.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start ">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Yo, Can you update Views?
+										<span class="msg_time">9:07 AM, Today</span>
+									</div>
+								</div>
+								<div class="d-flex justify-content-end mb-4">
+									<div class="msg_cotainer_send">
+										But I must explain to you how all this mistaken  born and I will give
+										<span class="msg_time_send">9:10 AM, Today</span>
+									</div>
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/9.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+								</div>
+								<div class="d-flex justify-content-start">
+									<div class="img_cont_msg">
+										<img src="../assets/img/faces/6.jpg" class="rounded-circle user_img_msg" alt="img">
+									</div>
+									<div class="msg_cotainer">
+										Okay Bye, text you later..
+										<span class="msg_time">9:12 AM, Today</span>
+									</div>
+								</div>
+							</div>
+							<!-- msg_card_body end -->
+							<!-- card-footer -->
+							<div class="card-footer">
+								<div class="msb-reply d-flex">
+									<div class="input-group">
+										<input type="text" class="form-control " placeholder="Typing....">
+										<div class="input-group-append ">
+											<button type="button" class="btn btn-primary ">
+												<i class="far fa-paper-plane" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div><!-- card-footer end -->
+						</div>
+					</div>
+				</div>
+			</div>
 
 			
 			<!-- Footer opened -->
 			<div class="main-footer ht-40">
 				<div class="container-fluid pd-t-0-f ht-100p">
-					<span>Copyright © 2024 <a href="#">Mohammed</a>. Designed by <a href="#">Mohammed</a> All rights reserved.</span>
+					<span>Copyright © 2020 <a href="#">Mohammed</a>. Designed by <a href="#">Mohammed</a> All rights reserved.</span>
 				</div>
 			</div>
 			<!-- Footer closed -->
@@ -798,8 +848,7 @@
 		<!-- End Page -->
 
 		<!-- Back-to-top -->
-		<a href="#top" id="back-to-top"><i class="ti-angle-double-up"></i></a>
-
+		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
 
 		<!-- JQuery min js -->
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
@@ -810,31 +859,30 @@
 		<!-- Bootstrap Bundle js -->
 		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+		<!-- Internal Flot js -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.js"></script> -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script> -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script> -->
+
 		<!-- Ionicons js -->
 		<script src="../assets/plugins/ionicons/ionicons.js"></script>
 
 		<!-- Moment js -->
 		<script src="../assets/plugins/moment/moment.js"></script>
 
-		<!--Internal  jquery.maskedinput date js -->
-		<script src="../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
-
-		<!--Internal  spectrum-colorpicker js -->
-		<script src="../assets/plugins/spectrum-colorpicker/spectrum.js"></script>
-		
-		<!--Internal  jquery-simple-datetimepicker js -->
-		<script src="../assets/plugins/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
-
-		<!--Internal  pickerjs js -->
-		<script src="../assets/plugins/pickerjs/picker.min.js"></script>
-
-		<!-- Rating js-->
-		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
-		<script src="../assets/plugins/rating/jquery.barrating.js"></script>
+		<!-- Internal Select2 js-->
 
 		<!-- P-scroll js -->
 		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+		<!-- eva-icons js -->
+		<script src="../assets/js/eva-icons.min.js"></script>
+
+		
+		<!-- Rating js-->
+		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="../assets/plugins/rating/jquery.barrating.js"></script>
 
 		<!-- Custom Scroll bar Js-->
 		<script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -842,37 +890,66 @@
 		<!-- Left-menu js-->
 		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
 
-		
-		<!-- Internal Select2.min js -->
-		<script src="../assets/plugins/select2/js/select2.min.js"></script>
-
 		<!-- Right-sidebar js -->
 		<script src="../assets/plugins/sidebar/sidebar-rtl.js"></script>
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
-
-		<!-- eva-icons js -->
-		<script src="../assets/js/eva-icons.min.js"></script>
 
 		<!-- Sticky js -->
 		<script src="../assets/js/sticky.js"></script>
 		<script src="../assets/js/modal-popup.js"></script>
 
-		<!-- custom js -->
-		<script src="../assets/js/custom.js"></script>
+        <!-- Internal Chart flot js -->
+        <!-- <script src="../assets/js/chart.flot.js"></script> -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.js"></script> -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script> -->
+		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script> -->
+        <!--chart round js -->
+        <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="../assets/js/index.js"></script>
+        <!-- <script src="../assets/js/apexcharts.js"></script> -->
+        <script src="../assets/js/custom.js"></script>
 
-		<!-- Internal form-elements js -->
-		<script src="../assets/js/form-elements.js"></script>
 
-        <!-- wizard -->
-        <script src="../assets/plugins/wizards/js/jquery.backstretch.min.js"></script>
-        <script src="../assets/js/jquery.backstretch.min.js"></script>
-        <script src="../assets/plugins/wizards/js/retina-1.1.0.min.js"></script>
-        <script src="../assets/plugins/wizards/js/scripts.js"></script>
-        
-        <!-- select mul -->
-        <script src="../assets/plugins/select_mul/js/semantic.min.js"></script>
-        <script src="../assets/plugins/select_mul/js/main.js"></script>
 
+
+
+
+
+		<script>
+			var xyValues = [
+			  {x:50, y:7},
+			  {x:60, y:8},
+			  {x:70, y:8},
+			  {x:80, y:9},
+			  {x:90, y:9},
+			  {x:100, y:9},
+			  {x:110, y:10},
+			  {x:120, y:11},
+			  {x:130, y:14},
+			  {x:140, y:14},
+			  {x:150, y:15}
+			];
+			
+			new Chart("myChart", {
+			  type: "scatter",
+			  data: {
+				datasets: [{
+				  pointRadius: 4,
+				  pointBackgroundColor: "rgb(0,0,255)",
+				  data: xyValues
+				}]
+			  },
+			  options: {
+				legend: {display: false},
+				scales: {
+				  xAxes: [{ticks: {min: 40, max:160}}],
+				  yAxes: [{ticks: {min: 6, max:16}}],
+				}
+			  }
+			});
+			</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 	</body>
 </html>
