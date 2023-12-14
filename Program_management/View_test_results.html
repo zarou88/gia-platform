@@ -20,7 +20,7 @@
 		<link href="../assets/css/icons.css" rel="stylesheet">
 
 		<!-- Internal Morris Css-->
-		<link href="../assets/plugins/morris.js/morris.css" rel="stylesheet">
+		<!-- <link href="../assets/plugins/morris.js/morris.css" rel="stylesheet"> -->
 
 		<!--  Right-sidemenu css -->
 		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
@@ -409,8 +409,9 @@
 									<div class="card">
 										<div class="card-body  iconfont text-right d-flex justify-content-between">
 											<div class="d-flex mb-0">
-												<div class="card-chart bg-warning-transparent brround mt-0">
-													<i class="typcn typcn-group-outline text-warning tx-24"></i>
+												<div class="card-chart bg-success-transparent brround mt-0">
+													<!-- <i class="si si-check "></i> -->
+													<i class="bi bi-patch-check-fill text-success tx-22"></i>
 												</div>
 												<div class="">
 													<p class="mb-2 tx-12 text-muted"> الأجابات الصحيحة  </p>
@@ -436,14 +437,12 @@
 									<div class="card">
 										<div class="card-body iconfont text-right d-flex justify-content-between">
 											<div class="d-flex mb-0">
-												<div class="card-chart bg-warning-transparent brround ml- mt-0">
-													<i class="typcn typcn-document-text text-warning tx-24"></i>
+												<div class="card-chart bg-danger-transparent brround ml- mt-0">
+													<i class="bi bi-x-octagon-fill text-danger tx-22"></i>
 												</div>
 												<div class="">
 													<p class="mb-2 tx-12 text-muted"> الأجابات الخاطئة </p>
-													
-														<h4 class="mb-1 font-weight-bold">13</h4>
-													
+													<h4 class="mb-1 font-weight-bold">13</h4>
 												</div>
 											</div>
 											<div class=" mt-3">
@@ -464,7 +463,8 @@
 										<div class="card-body iconfont text-right d-flex justify-content-between">
 											<div class="d-flex mb-0">
 												<div class="card-chart bg-warning-transparent brround ml-2 mt-0">
-													<i class="bi bi-cash-stack text-warning tx-24"></i>
+													<i class="typcn typcn-chart-line-outline text-warning tx-24"></i>
+													<!-- <i class="bi bi-cash-stack text-warning tx-24"></i> -->
 												</div>
 												<div class="">
 													<p class="mb-2 tx-12 text-muted"> نسبة الأجتياز </p>
@@ -519,7 +519,7 @@
 								</div>
 								<div class="col-lg-6 col-sm-12">
 									<div class="card p-0">
-										<div class="card-body pt-0">
+										<div class="card-body p-1">
 											<!-- col-6 -->
 								            <div id="chart" class=""></div>
 								            <h5 class="text-center"> درجة الأختبار </h5>
@@ -534,7 +534,6 @@
 									<div class="card">
 										<div class="card-body">
 											<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
-
 										</div>
 									</div>
 
@@ -568,6 +567,36 @@
 												    <tr>
 													   <p class="p-5 text-center d-none" id="empty-message">لا توجد بيانات لعرضها</p>
 												    </tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-danger-transparent"> أ  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-success-transparent"> ب  </td>
+													</tr>
+													<tr class="table-rows">
+														<td scope="row"> سؤال رقم1 </td>
+														<td> ب </td>
+														<td class="bg-danger-transparent"> أ  </td>
+													</tr>
 													<tr class="table-rows">
 														<td scope="row"> سؤال رقم1 </td>
 														<td> ب </td>
@@ -854,15 +883,14 @@
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
 
 		<!--Internal  Datepicker js -->
-		<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
-
+\
 		<!-- Bootstrap Bundle js -->
 		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 		<!-- Internal Flot js -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.js"></script> -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script> -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script> -->
+		<script src="../assets/plugins/jquery.flot/jquery.flot.js"></script>
+		<script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script>
+		<script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script>
 
 		<!-- Ionicons js -->
 		<script src="../assets/plugins/ionicons/ionicons.js"></script>
@@ -899,14 +927,12 @@
 		<script src="../assets/js/modal-popup.js"></script>
 
         <!-- Internal Chart flot js -->
-        <!-- <script src="../assets/js/chart.flot.js"></script> -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.js"></script> -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.pie.js"></script> -->
-		<!-- <script src="../assets/plugins/jquery.flot/jquery.flot.resize.js"></script> -->
+        <script src="../assets/js/chart.flot.js"></script>
+		
         <!--chart round js -->
         <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
         <script src="../assets/js/index.js"></script>
-        <!-- <script src="../assets/js/apexcharts.js"></script> -->
+        <script src="../assets/js/apexcharts.js"></script>
         <script src="../assets/js/custom.js"></script>
 
 
@@ -914,6 +940,7 @@
 
 
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 		<script>
 			var xyValues = [
@@ -948,8 +975,5 @@
 			  }
 			});
 			</script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
 	</body>
 </html>
