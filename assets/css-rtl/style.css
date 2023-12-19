@@ -6395,6 +6395,10 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     animation: none; } }
 
 /* ###### 3.14 Table ###### */
+<<<<<<< HEAD
+=======
+.table thead th{margin-bottom: 90px !important;}
+>>>>>>> 34dc841 (updat pags)
 .table {
   color: #364261; }
   .table thead th, .table thead td {
@@ -6431,8 +6435,15 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dde2ef; }
+<<<<<<< HEAD
   .table thead th {
     vertical-align: bottom; }
+=======
+
+    /* .table  thead{margin-bottom: 70px !important;} */
+  /* .table thead th {
+    vertical-align: bottom; } */
+>>>>>>> 34dc841 (updat pags)
   .table tbody + tbody {
     border-top: 2px solid #dde2ef; }
 
@@ -52619,35 +52630,68 @@ flex-wrap: wrap; } }
   a:hover{color:#000000c2 !important;}
   a .side-menu__label:focus{color:#000000c2;}
 
+<<<<<<< HEAD
   .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {color:#000000c2 !important;}
   .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
     color: #000000c2 !important;
     fill: #000000c2 !important;
 }
+=======
+  /* .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {color:#000000c2 !important;}
+  .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
+    color: #000 !important;
+    fill: #000 !important;
+} */
+>>>>>>> 34dc841 (updat pags)
 .item:hover, .slide-item:focus {
   
   color: #000000c2 !important;
 }
+<<<<<<< HEAD
 
+=======
+.app-sidebar .side-menu__item.active:hover {
+  color: #fff !important;
+}
+>>>>>>> 34dc841 (updat pags)
 
 
 @media (max-width: 424px) {
   
        
   
+<<<<<<< HEAD
   /* .sales-cardSmall{margin-top: 100px;} */
+=======
+>>>>>>> 34dc841 (updat pags)
 }
 
 @media (max-width: 920px) {
   
+<<<<<<< HEAD
   /* .sales-cardSmall{margin-top: 100px;} */
+=======
+}
+
+@media (max-width: 2000px) {
+  .w-lg-40{width:40% ;}
+  
+}
+
+@media (max-width: 992px) {
+  .w-lg-40{width:100% ;}
+  
+>>>>>>> 34dc841 (updat pags)
 }
   
 .row-sm > div {
   padding-left: 5px !important;
   padding-right: 5px !important;
 }
+<<<<<<< HEAD
   /* .container-fluid{margin-top: 200px;} */
+=======
+>>>>>>> 34dc841 (updat pags)
 
   .sales-cardSmall .card-body{
     padding-left:15px;
@@ -52683,10 +52727,17 @@ flex-wrap: wrap; } }
 
 
 /* ############################################################################### */
+<<<<<<< HEAD
 .side-menu__item,h1,h2,a,h3,h4,h5,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
   font-family: 'Cairo', sans-serif;
 }
 p,span,td,button,label,option,select{font-family: 'Tajawal', sans-serif;}
+=======
+.side-menu__item .side-menu__label,h1,h2,h3,h4,h5,h6,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
+  font-family: 'Cairo', sans-serif;
+}
+p,span,td,button,label,option,select,input,a{font-family: 'Tajawal', sans-serif;}
+>>>>>>> 34dc841 (updat pags)
 .wizard > .steps {
   padding: 30px;
   position: absolute;
@@ -52887,4 +52938,51 @@ a.demo {
 
 .bi-pen:hover{color: red;}
 
+<<<<<<< HEAD
 .examBefor,.examAfter{border-bottom: 1px solid #000;}
+=======
+.examBefor,.examAfter{border-bottom: 1px solid #000;}
+
+
+
+
+.panel-tabs .active{border-bottom: 2px solid #000;}
+.w-40{width:40%}
+
+.btnAddtest{
+  margin-right: 5px;
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    line-height: 8px;
+}
+.w-60{width:60%}
+
+
+
+
+
+.btnRemoveTest{ position: absolute !important; left: 50% !important;margin-bottom: -9px !important ;}
+
+.btnSaveTest{margin-top:70px !important;
+  position: absolute;
+  z-index: 150;
+  bottom:-55px;
+  left:0;
+}
+
+
+
+.dropdown-menu.show{
+  border-radius: 10px;
+  padding:10px;
+}
+
+@media (min-width: 768px){
+.app .sidenav-toggled .side-menu__item {
+    display: flex !important;
+   
+}}
+
+
+>>>>>>> 34dc841 (updat pags)

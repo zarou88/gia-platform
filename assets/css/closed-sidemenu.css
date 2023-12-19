@@ -534,6 +534,7 @@ slide is-expanded side-menu__item {
 }
 
 .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
+<<<<<<< HEAD
   color: #0162e8 !important;
   fill: #0162e8 !important;
 }
@@ -541,6 +542,15 @@ slide is-expanded side-menu__item {
 .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
   color: #0162e8 !important;
 }
+=======
+  color: #4a4848 !important;
+  fill: #565555 !important;
+}
+
+/* .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
+  color: #0162e8 !important;
+} */
+>>>>>>> 34dc841 (updat pags)
 
 .slide-item.active, .slide-item:hover, .slide-item:focus {
   text-decoration: none;
@@ -998,7 +1008,11 @@ slide is-expanded side-menu__item {
 }
 
 .app-sidebar .side-menu__item.active:hover {
+<<<<<<< HEAD
   color: #7282a9 !important;
+=======
+  color: #ffffff !important;
+>>>>>>> 34dc841 (updat pags)
 }
 
 .app-sidebar .slide.active .side-menu__icon, .app-sidebar .slide.is-expanded .side-menu__icon {

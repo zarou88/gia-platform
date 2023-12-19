@@ -1594,7 +1594,11 @@ transform: translate3d(0, 0, 0);
 	  display: block;
 	}
 	.app.sidenav-toggled .side-menu__item{
+<<<<<<< HEAD
 		display: block;
+=======
+		display: flex;
+>>>>>>> 34dc841 (updat pags)
 		margin: 0 auto;
 		padding: 10px 0;
 		text-align: center;

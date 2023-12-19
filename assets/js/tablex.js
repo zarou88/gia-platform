@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-// Filter And Searsh Top
->>>>>>> 34dc841 (updat pags)
 const tableBody = document.getElementById("table-body");
 const tableRows = document.getElementsByClassName("table-rows");
 const searchTable = document.getElementById("search-table");
@@ -11,13 +7,10 @@ const tableStatus = document.getElementById("table-status");
 const tablePaganiteNext = document.getElementById("table-paganite-next");
 const tablePaganitePrev = document.getElementById("table-paganite-prev");
 const emptyMessage = document.getElementById("empty-message");
-<<<<<<< HEAD
-=======
 const colFilter = document.getElementsByClassName("col-filter");
 const colFilterMenu = colFilter[0].getElementsByClassName("dropdown-menu")[0];
 const checkFilter = colFilterMenu.getElementsByTagName("input");
 const tableHead = document.getElementsByClassName("tableHead")[0];
->>>>>>> 34dc841 (updat pags)
 
 const rows = Array.from(tableRows);
 let rowsNumber = tableRowsNumber[0].value == "all" ? rows.length : Number(tableRowsNumber[0].value)
@@ -35,8 +28,6 @@ const checkBtns = (pages) => {
         tablePaganiteNext.disabled = false;
     }
 }
-<<<<<<< HEAD
-=======
 const createElementFromHTML = (htmlString) => {
     const div = document.createElement('div');
     div.innerHTML = htmlString.trim();
@@ -57,13 +48,12 @@ Array.from(tableHead.children).some((ch, i) => {
             index: i,
             label: ch.textContent.replace(/[\r\n]/gm, '').replace(/[\t]/gm, ' ').trim().split(" ").filter(str => str !== "").join(" "),
             values,
-            show: i <= 8
+            show: i <= 9
         }
         cols.push(newObj)
         colFilterMenu.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
     }
 })
->>>>>>> 34dc841 (updat pags)
 
 const updateTable = (newRows) => {
     while (tableBody.children[0]) {
@@ -77,13 +67,10 @@ const updateTable = (newRows) => {
     let start = (activePage - 1) * rowsNumber;
     let end = activePage * rowsNumber;
     Array.from(newRows).forEach((row, index) => {
-<<<<<<< HEAD
-=======
         Array.from(row.children).forEach(ch => ch.classList.remove("d-none"))
         cols.filter(c => c.show == false).forEach(c => {
             row.children[c.index].classList.add("d-none")
         });
->>>>>>> 34dc841 (updat pags)
         if (index >= start && index < end) {
             tableBody.appendChild(row);
         }
@@ -108,13 +95,9 @@ const searchFilter = e => {
     }))
 }
 
-<<<<<<< HEAD
-searchTable.addEventListener("input", e => searchFilter(e.target.value))
-
-=======
 
 searchTable.addEventListener("input", e => searchFilter(e.target.value))
->>>>>>> 34dc841 (updat pags)
+
 Array.from(tableRowsNumber).forEach(trn => {
     trn.addEventListener("change", e => {
         for (let i = 0; i < tableRowsNumber.length; i++) tableRowsNumber[i].value = e.target.value
@@ -124,8 +107,6 @@ Array.from(tableRowsNumber).forEach(trn => {
     })
 })
 
-<<<<<<< HEAD
-=======
 const checkHead = () => {
     Array.from(tableHead.children).forEach((ch, i) => {
         ch.classList.remove("d-none");
@@ -145,7 +126,6 @@ Array.from(checkFilter).forEach((chk, i) => {
     })
 })
 
->>>>>>> 34dc841 (updat pags)
 tablePaganiteNext.addEventListener("click", () => {
     activePage++;
     searchFilter(searchTable.value);
@@ -155,14 +135,11 @@ tablePaganiteNext.addEventListener("click", () => {
 tablePaganitePrev.addEventListener("click", () => {
     activePage--;
     searchFilter(searchTable.value);
-<<<<<<< HEAD
 })
-=======
-})
-
 
 
 // input all chick
+
 $(document).ready(function () {
     // عند النقر على الصندوق الرئيسي
     $('.checkParent').on('change', function () {
@@ -199,7 +176,9 @@ $(document).ready(function () {
 });
 
 
+
 // btnPrint
+
 $(document).ready(function () {
     // عند النقر على زر الطباعة
     $('.btn-print').on('click', function () {
@@ -238,6 +217,10 @@ $(document).ready(function () {
 });
 
 
+
+
+
+
 // print exel
 // تضمين مكتبة xlsx
 
@@ -273,4 +256,3 @@ $(document).ready(function () {
     });
 });
 
->>>>>>> 34dc841 (updat pags)

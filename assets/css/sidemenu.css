@@ -598,10 +598,17 @@ slide is-expanded side-menu__item {
   color: #0162e8 !important;
   fill: #0162e8 !important;
 }
+<<<<<<< HEAD
 
 .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
   color: #0162e8 !important;
 }
+=======
+/* 
+.slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
+  color: #0162e8 !important;
+} */
+>>>>>>> 34dc841 (updat pags)
 
 .slide-item.active, .slide-item:hover, .slide-item:focus {
   text-decoration: none;
@@ -865,7 +872,11 @@ slide is-expanded side-menu__item {
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
   }
   .app.sidenav-toggled .side-menu__item {
+<<<<<<< HEAD
     display: block;
+=======
+    display: flex;
+>>>>>>> 34dc841 (updat pags)
     padding: 8px 0 9px 0;
     margin: 0 auto;
     text-align: center;

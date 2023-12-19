@@ -9,13 +9,23 @@
 .navbar .navbar-toggle.toggle-left {
     float: left;
     margin-left: 15px;
+<<<<<<< HEAD
 }
+=======
+  
+}
+.imgUser{margin: auto;margin-top: 0px; margin-bottom: 0px;}
+>>>>>>> 34dc841 (updat pags)
 
 .navbar .navbar-toggle.toggle-right {
     float: right;
     margin-right: 15px;
 }
+<<<<<<< HEAD
 
+=======
+.m-auto{margin: auto !important;}
+>>>>>>> 34dc841 (updat pags)
 .navbar .navbar-toggle.toggle-sidebar, [data-toggle="sidebar"] {
     display: block;
 }
@@ -31,6 +41,10 @@
 }
 .sidebar-left {
     left: 0;
+<<<<<<< HEAD
+=======
+    /* right: 0; */
+>>>>>>> 34dc841 (updat pags)
 }
 .sidebar-right {
     right: 0;
@@ -157,3 +171,8 @@
 	transform: translate(0,0);
 	box-shadow: none;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 34dc841 (updat pags)

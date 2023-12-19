@@ -3,8 +3,23 @@
 /*white variables*/
 /*black variables*/
 /*shadow variables*/
+<<<<<<< HEAD
 .app-sidebar .mCSB_draggerContainer {
   left: -11px !important; }
+=======
+.slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
+  color: #686666 !important;
+  fill: #767474 !important;
+}
+
+.app-sidebar .mCSB_draggerContainer {
+  left: -11px !important; }
+  .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
+    color: #4e4d4d !important;
+    fill: #717171 !important;
+}
+
+>>>>>>> 34dc841 (updat pags)
 
 @media (min-width: 768px) {
   .app.sidenav-toggled .app-content {
@@ -156,7 +171,13 @@
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     display: block;
+<<<<<<< HEAD
     width: 230px; } }
+=======
+    width: 230px; }
+
+   }
+>>>>>>> 34dc841 (updat pags)
 
 .app-sidebar__toggle {
   color: #fff;
@@ -459,12 +480,21 @@ slide is-expanded side-menu__item {
     -webkit-box-shadow: none;
     box-shadow: none; } }
 
+<<<<<<< HEAD
 .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
   color: #0162e8 !important;
   fill: #0162e8 !important; }
 
 .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
   color: #0162e8 !important; }
+=======
+/* .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
+  color: #ffffff !important;
+  fill: #ffffff !important; } */
+
+/* .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
+  color: #0162e8 !important; } */
+>>>>>>> 34dc841 (updat pags)
 
 .slide-item.active, .slide-item:hover, .slide-item:focus {
   text-decoration: none;
@@ -681,7 +711,11 @@ slide is-expanded side-menu__item {
     -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2); }
   .app.sidenav-toggled .side-menu__item {
+<<<<<<< HEAD
     display: block;
+=======
+    display: flex;
+>>>>>>> 34dc841 (updat pags)
     padding: 8px 0 9px 0;
     margin: 0 auto;
     text-align: center;
@@ -988,7 +1022,11 @@ slide is-expanded side-menu__item {
   height: 28px !important; }
 
 .app-sidebar .side-menu__item.active:hover {
+<<<<<<< HEAD
   color: #7282a9 !important; }
+=======
+  color: #202020 !important; }
+>>>>>>> 34dc841 (updat pags)
 
 .app-sidebar .slide.active .side-menu__icon, .app-sidebar .slide.is-expanded .side-menu__icon {
   fill: #277aec !important; }
