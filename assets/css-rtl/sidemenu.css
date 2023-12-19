@@ -5,9 +5,6 @@
 /*shadow variables*/
 .app-sidebar .mCSB_draggerContainer {
   left: -11px !important; }
-<<<<<<< HEAD
-
-=======
 /* .side-menu__item.active .side-menu__label {
   background-color: #E4611D !important;
 } */
@@ -29,7 +26,6 @@
 }
 .slide.is-expanded .side-menu__label .active, .slide.is-expanded .side-menu__icon .active, .slide.is-expanded .angle .active{color: #fff !important;}
 .side-menu__item .active{color: #fff !important;}
->>>>>>> 34dc841 (updat pags)
 @media (min-width: 768px) {
   .app.sidenav-toggled .app-content {
     margin-right: 80px; }
@@ -426,11 +422,7 @@
   padding: 0;
   list-style: none; }
   .side-menu .slide .side-menu__item {
-<<<<<<< HEAD
-    padding: 0 20px 0 22px;
-=======
     padding: 0 8px 0 12px;
->>>>>>> 34dc841 (updat pags)
     margin: 0;
     border-radius: 0; }
 
@@ -465,11 +457,7 @@ slide is-expanded side-menu__item {
     text-decoration: none;
     color: #0162e8; }
   .side-menu__item.active .side-menu__label {
-<<<<<<< HEAD
-    color: #0162e8; }
-=======
     color: #ffffff; }
->>>>>>> 34dc841 (updat pags)
   .side-menu__item.active .angle {
     color: #0162e8; }
   .side-menu__item.active .side-menu__icon {
@@ -495,21 +483,12 @@ slide is-expanded side-menu__item {
     font-size: 12px;
     box-shadow: none; } }
 
-<<<<<<< HEAD
-.slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
-  color: #0162e8 !important;
-  fill: #0162e8 !important; }
-
-.slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
-  color: #0162e8 !important; }
-=======
 /* .slide:hover .side-menu__label, .slide:hover .angle, .slide:hover .side-menu__icon {
   color: #ffffff !important;
   fill: #ffffff !important; } */
 
 /* .slide.is-expanded .side-menu__label, .slide.is-expanded .side-menu__icon, .slide.is-expanded .angle {
   color: #0162e8 !important; } */
->>>>>>> 34dc841 (updat pags)
 
 .slide-item.active, .slide-item:hover, .slide-item:focus {
   text-decoration: none;
@@ -558,11 +537,7 @@ slide is-expanded side-menu__item {
   line-height: 34px;
   border-radius: 3px;
   text-align: center;
-<<<<<<< HEAD
-  color: #a8b1c7;
-=======
   color: #fe0a0a;
->>>>>>> 34dc841 (updat pags)
   fill: #5b6e88; }
 
 .side-menu__icon {
@@ -588,17 +563,7 @@ slide is-expanded side-menu__item {
   vertical-align: middle;
   font-weight: 400; }
 
-<<<<<<< HEAD
-.app-sidebar .slide .side-menu__item.active::before {
-  content: '';
-  width: 3px;
-  height: 31px;
-  background: #005ee9;
-  position: absolute;
-  right: 0; }
-=======
 
->>>>>>> 34dc841 (updat pags)
 
 .app-sidebar .side-item.side-item-category {
   color: #2c364c;
@@ -1043,11 +1008,7 @@ slide is-expanded side-menu__item {
   height: 28px !important; }
 
 .app-sidebar .side-menu__item.active:hover {
-<<<<<<< HEAD
-  color: #7282a9 !important; }
-=======
   color: #4f4f4f !important; }
->>>>>>> 34dc841 (updat pags)
 
 .app-sidebar .slide.active .side-menu__icon, .app-sidebar .slide.is-expanded .side-menu__icon {
   fill: #277aec  !important; }
@@ -1056,11 +1017,7 @@ slide is-expanded side-menu__item {
   fill: #277aec  !important; }
 
 .app-sidebar .slide.active .side-menu__item {
-<<<<<<< HEAD
-  color: #277aec  !important; }
-=======
   color: #3d3e41  !important; }
->>>>>>> 34dc841 (updat pags)
 
 .app-sidebar .slide-menu .sub-slide-menu a:before {
   left: 19px; }
