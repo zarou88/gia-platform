@@ -1,7 +1,4 @@
-/* All the default sidebar styles */
-/* toggle button settings */
-/* Note: this disables the navbar-toggle class's hide function. set visibility with the boostrap visible/hidden classes */
-/* Note: this also disables the navbar-header class positioning settings in small screens. */
+
 .navbar.navbar-static .navbar-header {
     float: left;
 }
@@ -162,3 +159,30 @@
 }
 
 
+
+
+
+
+
+
+/* drawer sid usser before */
+#side-drawer {
+    
+    height: auto;
+    max-height: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 300px;  /*Ideal width for sidebar accdg to https://forums.envato.com/t/standard-sidebar-width/75633*/
+    top: 0;
+    left: -336px;
+    z-index: 1032;  /*z-index of standard bootstrap navbar is 1030 + 1 offset due to side-drawer-void*/
+    transition: left 0.25s ease;
+}
+
+#side-drawer-void {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1031;  /*z-index of standard bootstrap navbar is 1030*/
+    background: rgb(255 255 255 / 0%);
+}

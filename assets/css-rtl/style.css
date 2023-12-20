@@ -52899,7 +52899,7 @@ a.demo {
 
 .bi-pen:hover{color: red;}
 
-.examBefor,.examAfter{border-bottom: 1px solid #000;}
+.examBefor,.examAfter{border-bottom: 1px solid #000;cursor:pointer}
 
 
 
@@ -52919,6 +52919,11 @@ a.demo {
 
 
 
+.scrollable-menu {
+  height: auto;
+  max-height: 100%;
+  overflow-x: hidden;
+}
 
 .btnRemoveTest{ position: absolute !important; left: 50% !important;margin-bottom: -9px !important ;}
 
