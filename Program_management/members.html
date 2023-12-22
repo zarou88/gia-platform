@@ -34,18 +34,8 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">	
 		<!--  drawar user css -->
 		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
-		<style>
+	
 
-.dropdown:hover>.dropdown-menu {
-  display: block;
-}
-
-.dropdown>.dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
-.Attendance{margin-top: -50px;position: absolute; left: 50px !important;}
-		</style>
 	</head>
 	<body class="main-body app sidebar-mini">
 		<!-- Loader -->
@@ -86,7 +76,8 @@
 								<a class="side-menu__item" data-toggle="slide"  href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu">
 									<li><a class="slide-item" href="../Stakeholde_management/stakeholder_management.html">الادارة </a></li>
-									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html">العملاء</a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html"> المدربين </a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/customers.html">العملاء</a></li>
 								</ul>
 							</li>
 							<li class="slide">
@@ -367,7 +358,7 @@
 										<a href="../index.html" >الرئيسية</a>
 									</li>
 									<li class="breadcrumb-item">
-										<a href="#"class="text-muted">البرامج</a>
+										<a href="table_program_management.html"class="text-muted">البرامج</a>
 									</li>
 									<li class="breadcrumb-item">
 										<a href="#" class="text-muted"> برنامج تطوير المهارات الشخصية </a>
@@ -380,10 +371,10 @@
 				    	</div>
 				    	<div class="main-dashboard-header-right">
 				    		<div class="d-flex flex-wrap">
-								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1"> اضافة مشاركين جدد <i class="bi bi-plus"></i></button>
+								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1"data-target="#modaladd" data-toggle="modal"> اضافة مشاركين جدد <i class="bi bi-plus"></i></button>
 								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1"> تحميل تقرير المشاركين   <i class="bi bi-box-arrow-in-down"></i></i></button>
 								<button class="btn btn-warning-gradient btn-with-icon btn-sm mr-1"> ارسال دعوة جماعية   <i class="icon ion-md-paper-plane"></i></button>
-								<a href="view_programmes.html"  class="btn btn-previous btn-sm text-warning mt-2"><i class="ti-angle-double-right"></i> العودة </a>
+								<a href="../index.html"  class="btn btn-previous btn-sm text-warning mt-2"><i class="ti-angle-double-right"></i> العودة </a>
 				    		</div>
 				    	</div>
 				    </div>
@@ -395,7 +386,7 @@
 				<br><br><br><br><br>
 				<!-- container opened -->
 				<div class="container-fluid mt-3">
-					<!-- row -->
+				<!-- row -->
 				<div class="row">
 
 					<!--open filter Top  -->
@@ -512,8 +503,45 @@
 													<!-- dropdown-menu -->
 													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>	
+										    </tr>
+
+											
+											<tr class="table-rows">
+											    <td><input type="checkbox" class="checkChild"></td>
+											    <td>1</td>
+											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
+											    <td>نقطة استفهام</td>
+											    <td class="client-name"> 0545255177 </td>
+											    <td>  8451654 </td>
+											    <td>مدير ادارة</td>
+											    <td class="d-flex">
+												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
+												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
+											    </td>
+											    <td>
+													<span class="ml-2 dropdown"> 4 ايام </span>
+													
+													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
+													<div class="Attendance dropdown-menu scrollable-menu">
+														<span class="dropdown-item"> اليوم الاول  </span>
+														<span class="dropdown-item text-danger"> اليوم الثاني </span>
+														<span class="dropdown-item"> اليوم الثالث</span>
+														<span class="dropdown-item text-danger"> اليوم الرابع</span>
+														<span class="dropdown-item"> اليوم الخامس </span>
+													</div>										
+												</td>
+												<td>60%</td>
+												<td> # </td>	
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>	
 										    </tr>
@@ -548,44 +576,8 @@
 													<!-- dropdown-menu -->
 													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
-													</div>
-												</td>	
-										    </tr>
-
-											<tr class="table-rows">
-											    <td><input type="checkbox" class="checkChild"></td>
-											    <td>1</td>
-											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
-											    <td>نقطة استفهام</td>
-											    <td class="client-name"> 0545255177 </td>
-											    <td>  8451654 </td>
-											    <td>مدير ادارة</td>
-											    <td class="d-flex">
-												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
-												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
-											    </td>
-											    <td>
-													<span class="ml-2 dropdown"> 4 ايام </span>
-													
-													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
-													<div class="Attendance dropdown-menu scrollable-menu">
-														<span class="dropdown-item"> اليوم الاول  </span>
-														<span class="dropdown-item text-danger"> اليوم الثاني </span>
-														<span class="dropdown-item"> اليوم الثالث</span>
-														<span class="dropdown-item text-danger"> اليوم الرابع</span>
-														<span class="dropdown-item"> اليوم الخامس </span>
-													</div>										
-												</td>
-												<td>60%</td>
-												<td> # </td>	
-												<td class="d-flex filter-col-cell">
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
-													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>	
 										    </tr>
@@ -620,8 +612,153 @@
 													<!-- dropdown-menu -->
 													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>	
+										    </tr>
+
+											<tr class="table-rows">
+											    <td><input type="checkbox" class="checkChild"></td>
+											    <td>1</td>
+											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
+											    <td>نقطة استفهام</td>
+											    <td class="client-name"> 0545255177 </td>
+											    <td>  8451654 </td>
+											    <td>مدير ادارة</td>
+											    <td class="d-flex">
+												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
+												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
+											    </td>
+											    <td>
+													<span class="ml-2 dropdown"> 4 ايام </span>
+													
+													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
+													<div class="Attendance dropdown-menu scrollable-menu">
+														<span class="dropdown-item"> اليوم الاول  </span>
+														<span class="dropdown-item text-danger"> اليوم الثاني </span>
+														<span class="dropdown-item"> اليوم الثالث</span>
+														<span class="dropdown-item text-danger"> اليوم الرابع</span>
+														<span class="dropdown-item"> اليوم الخامس </span>
+													</div>										
+												</td>
+												<td>60%</td>
+												<td> # </td>	
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>	
+										    </tr>
+
+											
+											<tr class="table-rows">
+											    <td><input type="checkbox" class="checkChild"></td>
+											    <td>1</td>
+											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
+											    <td>نقطة استفهام</td>
+											    <td class="client-name"> 0545255177 </td>
+											    <td>  8451654 </td>
+											    <td>مدير ادارة</td>
+											    <td class="d-flex">
+												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
+												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
+											    </td>
+											    <td>
+													<span class="ml-2 dropdown"> 4 ايام </span>
+													
+													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
+													<div class="Attendance dropdown-menu scrollable-menu">
+														<span class="dropdown-item"> اليوم الاول  </span>
+														<span class="dropdown-item text-danger"> اليوم الثاني </span>
+														<span class="dropdown-item"> اليوم الثالث</span>
+														<span class="dropdown-item text-danger"> اليوم الرابع</span>
+														<span class="dropdown-item"> اليوم الخامس </span>
+													</div>										
+												</td>
+												<td>60%</td>
+												<td> # </td>	
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>	
+										    </tr>
+
+											<tr class="table-rows">
+											    <td><input type="checkbox" class="checkChild"></td>
+											    <td>1</td>
+											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
+											    <td>نقطة استفهام</td>
+											    <td class="client-name"> 0545255177 </td>
+											    <td>  8451654 </td>
+											    <td>مدير ادارة</td>
+											    <td class="d-flex">
+												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
+												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
+											    </td>
+											    <td>
+													<span class="ml-2 dropdown"> 4 ايام </span>
+													
+													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
+													<div class="Attendance dropdown-menu scrollable-menu">
+														<span class="dropdown-item"> اليوم الاول  </span>
+														<span class="dropdown-item text-danger"> اليوم الثاني </span>
+														<span class="dropdown-item"> اليوم الثالث</span>
+														<span class="dropdown-item text-danger"> اليوم الرابع</span>
+														<span class="dropdown-item"> اليوم الخامس </span>
+													</div>										
+												</td>
+												<td>60%</td>
+												<td> # </td>	
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>	
+										    </tr>
+
+											<tr class="table-rows">
+											    <td><input type="checkbox" class="checkChild"></td>
+											    <td>1</td>
+											    <td scope="row"> محمد عبده عبدالرحمن ناصر </td>
+											    <td>نقطة استفهام</td>
+											    <td class="client-name"> 0545255177 </td>
+											    <td>  8451654 </td>
+											    <td>مدير ادارة</td>
+											    <td class="d-flex">
+												   <span class="ml-3 examBefor" data-toggle="sidebar-left" data-target=".sidebar-left"> قبلي</span>
+												   <span class="ml-3 examBefor" onclick="openSideDrawer()">بعدي</span>
+											    </td>
+											    <td>
+													<span class="ml-2 dropdown"> 4 ايام </span>
+												
+													<button class=" btn btn-previous p-0" data-toggle="dropdown"><i class="bi bi-exclamation-circle"></i></button>
+													<div class="Attendance dropdown-menu scrollable-menu">
+														<span class="dropdown-item"> اليوم الاول  </span>
+														<span class="dropdown-item text-danger"> اليوم الثاني </span>
+														<span class="dropdown-item"> اليوم الثالث</span>
+														<span class="dropdown-item text-danger"> اليوم الرابع</span>
+														<span class="dropdown-item"> اليوم الخامس </span>
+													</div>										
+												</td>
+												<td>60%</td>
+												<td> # </td>	
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+													<div class="dropdown-menu">
+														<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+														<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>	
 										    </tr>
@@ -677,8 +814,8 @@
 						 </div>
 					 </div>
 					 <!--closed filter bottom  -->
-				 </div>
-				 <!-- row closed -->
+				</div>
+				<!-- row closed -->
 
 					
 					
@@ -687,12 +824,97 @@
 			</div>
 			<!-- Container closed -->
 
+			<!-- add modal -->
+		<div class="modal" id="modaladd">
+			<div class="modal-dialog " role="document">
+				<div class="modal-content modal-content-demo">
+					<div class="modal-header">
+						<h5 class="modal-title"> اضافة مشارك </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<form action="">
+					    <div class="modal-body">
+					    	<div class="row">
+					    		<div class="col-12">
+					    			<label for="example"> الأسم  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>
+								<div class="col-6 mt-4">
+					    			<label for="example">  رقم الهاتف </label>
+					    			<input class="form-control"  required="" type="number">
+					    		</div>	
+								<div class="col-6 mt-4">
+					    			<label for="example"> الرقم الوظيفي </label>
+					    			<input class="form-control"  required="" type="number">
+					    		</div>	
+								<div class="col-12 mt-4">
+					    			<label for="example"> المهنة  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>	
+								<div class="col-12 mt-4">
+					    			<label for="example"> جهة العمل  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>	
+					    	</div>
+					    </div>
+					    <div class="modal-footer border-0">
+					    	<button class="btn btn-warning-gradient btn-with-icon" type="submit"> حفظ <i class="bi bi-floppy"></i></button>
+					    	<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End add modal -->
+
+
+			<!-- add modal -->
+			<div class="modal" id="modaledit">
+				<div class="modal-dialog " role="document">
+					<div class="modal-content modal-content-demo">
+						<div class="modal-header">
+							<h5 class="modal-title"> تحرير مشارك </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<form action="">
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-12">
+										<label for="example"> الأسم  </label>
+										<input class="form-control" value="محمد عبده"  required="" type="text">
+									</div>
+									<div class="col-6 mt-4">
+										<label for="example">  رقم الهاتف </label>
+										<input class="form-control" value="967775163208" required="" type="number">
+									</div>	
+									<div class="col-6 mt-4">
+										<label for="example"> الرقم الوظيفي </label>
+										<input class="form-control"value="787890787"  required="" type="number">
+									</div>	
+									<div class="col-12 mt-4">
+										<label for="example"> المهنة  </label>
+										<input class="form-control" value="اداري" required="" type="text">
+									</div>	
+									<div class="col-12 mt-4">
+										<label for="example"> جهة العمل  </label>
+										<input class="form-control" value="--------" required="" type="text">
+									</div>	
+								</div>
+							</div>
+							<div class="modal-footer border-0">
+								<button class="btn btn-warning-gradient btn-with-icon" type="submit"> حفظ <i class="bi bi-floppy"></i></button>
+								<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- End add modal -->
+
 			<!-- delete modal -->
 		    <div class="modal" id="modalDelete">
 		    	<div class="modal-dialog modal-sm" role="document">
 		    		<div class="modal-content modal-content-demo">
 		    			<div class="modal-header">
-		    				<h5 class="modal-title"> حذف البرامج </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+		    				<h5 class="modal-title"> حذف مشارك </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
 		    			</div>
 		    			<form action="">
 		    			    <div class="modal-body">
@@ -858,7 +1080,6 @@
 			<div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
 			  <!-- End Side Drawer -->
 		  
-			<!--/Sidebar-right-->
 
 			
 			<!-- Footer opened -->
@@ -916,14 +1137,7 @@
 
 		<script src="../assets/js/table.js"></script>
 
-		<script>
-			
-			$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
-		</script>
+		
 	</body>
 </html>
 

@@ -72,7 +72,8 @@
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu">
 									<li><a class="slide-item" href="Stakeholde_management/stakeholder_management.html">الادارة </a></li>
-									<li><a class="slide-item" href="Stakeholde_management/Trainers_management.html">العملاء</a></li>
+									<li><a class="slide-item" href="Stakeholde_management/Trainers_management.html"> المدربين </a></li>
+									<li><a class="slide-item" href="Stakeholde_management/customers.html">العملاء</a></li>
 								</ul>
 							</li>
 							<li class="slide">
@@ -358,7 +359,7 @@
 				    	<div class="main-dashboard-header-right">
 				    		<div class=" d-flex">
 				    			<a href="Program_management/create_programme.html" class="btn btn-warning-gradient btn-with-icon mr-1"> انشاء برنامج <i class="bi bi-plus"></i></a>
-				    			<a href="Program_management/members.html" class="btn btn-warning-gradient btn-with-icon mr-1 ">  اضافة مشاركين <i class="bi bi-plus"></i></a>
+								<button class="btn btn-warning-gradient btn-with-icon mr-1"data-target="#modaladd" data-toggle="modal"> اضافة مشاركين  <i class="bi bi-plus"></i></button>
 								<button class="btn btn-warning-gradient btn-icon mr-1"><i class="si si-options-vertical"></i></button>
 				    		</div>
 				    	</div>
@@ -944,7 +945,48 @@
 			</div>
 			<!-- Container closed -->
 
-			
+		<!-- add modal -->
+		<div class="modal" id="modaladd">
+			<div class="modal-dialog " role="document">
+				<div class="modal-content modal-content-demo">
+					<div class="modal-header">
+						<h5 class="modal-title"> اضافة مشارك </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<form action="">
+					    <div class="modal-body">
+					    	<div class="row">
+					    		<div class="col-12">
+					    			<label for="example"> الأسم  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>
+								<div class="col-6 mt-4">
+					    			<label for="example">  رقم الهاتف </label>
+					    			<input class="form-control"  required="" type="number">
+					    		</div>	
+								<div class="col-6 mt-4">
+					    			<label for="example"> الرقم الوظيفي </label>
+					    			<input class="form-control"  required="" type="number">
+					    		</div>	
+								<div class="col-12 mt-4">
+					    			<label for="example"> المهنة  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>	
+								<div class="col-12 mt-4">
+					    			<label for="example"> جهة العمل  </label>
+					    			<input class="form-control"  required="" type="text">
+					    		</div>	
+					    	</div>
+					    </div>
+					    <div class="modal-footer border-0">
+					    	<button class="btn btn-warning-gradient btn-with-icon" type="submit"> حفظ <i class="bi bi-floppy"></i></button>
+					    	<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End add modal -->
+
 			<!-- Footer opened -->
 			<div class="main-footer ht-40">
 				<div class="container-fluid pd-t-0-f ht-100p">

@@ -52947,4 +52947,15 @@ a.demo {
    
 }}
 
+/* 
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.Attendance{margin-top: -50px;position: absolute; left: 50px !important;}
+	 */

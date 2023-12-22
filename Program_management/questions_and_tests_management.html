@@ -48,35 +48,38 @@
 			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 			<aside class="app-sidebar sidebar-scroll">
 				<div class="main-sidebar-header active">
-					<a class="desktop-logo logo-light active" href="../index.html"><img src="assets/img/brand/logo.png" class="main-logo" alt="logo"></a>
-					<a class="logo-icon mobile-logo icon-light active" href="../index.html"><img src="assets/img/brand/favicon.png" class="logo-icon" alt="logo"></a>
+					<a class="desktop-logo logo-light active" href="../index.html"><img src="../assets/img/brand/logo.png" class="main-logo" alt="logo"></a>
+					<a class="desktop-logo logo-dark active" href="../index.html"><img src="../assets/img/brand/logo-white.png" class="main-logo dark-theme" alt="logo"></a>
+					<a class="logo-icon mobile-logo icon-light active" href="../index.html"><img src="../assets/img/brand/favicon.png" class="logo-icon" alt="logo"></a>
+					<a class="logo-icon mobile-logo icon-dark active" href="../index.html"><img src="../assets/img/brand/favicon-white.png" class="logo-icon dark-theme" alt="logo"></a>
 				</div>
 				<div class="main-sidemenu">
 					<div class="d-block pos-relative">
 						<ul class="side-menu pos-absolutee top-0 start-0">
 							<li class="slide">
-								<a class="side-menu__item active" data-toggle="slide" href="#"><i class="icon ion-ios-home tx-22"></i><span class="side-menu__label mr-3"> الرئيسية </span><i class=""></i></a>
+								<a class="side-menu__item" href="../index.html"><i class="icon ion-ios-home tx-22"></i><span class="side-menu__label mr-3"> الرئيسية </span><i class=""></i></a>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item " data-toggle="slide" href="#"><i class="typcn typcn-folder tx-22"></i><span class="side-menu__label mr-3">ادارة البرامج</span><i class="angle fe fe-chevron-down"></i></a>
-								<ul class="slide-menu">
-									<li class=""><a class="slide-item" href="Program_management/table_program_management.html"> البرامج </a></li>
-									<li class=""><a class="slide-item" href="Program_management/view_programmes.html"> الدورات التدريبية </a></li>
+								<a class="side-menu__item" data-toggle="slide" href="#"><i class="typcn typcn-folder tx-22"></i><span class="side-menu__label mr-3">ادارة البرامج</span><i class="angle fe fe-chevron-down"></i></a>
+								<ul class="slide-menu  ">
+									<li class=""><a class="slide-item" href="table_program_management.html"> البرامج </a></li>
+									<li class=""><a class="slide-item" href="view_programmes.html"> الدورات التدريبية </a></li>
 								</ul>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" data-toggle="slide" href="#"><i class="far fa-file-alt tx-22"></i><span class="side-menu__label mr-3">الأسئلة والاستبيانات</span><i class=""></i></a>
+								<a class="side-menu__item"  href="main_tests.html"><i class="far fa-file-alt tx-22"></i><span class="side-menu__label mr-3">الأسئلة والاستبيانات</span><i class=""></i></a>
 								
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" data-toggle="slide" href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
+								<a class="side-menu__item" data-toggle="slide"  href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu">
-									<li><a class="slide-item" href="#">الادارة </a></li>
-									<li><a class="slide-item" href="#">العملاء</a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/stakeholder_management.html">الادارة </a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html"> المدربين </a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/customers.html">العملاء</a></li>
 								</ul>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" data-toggle="slide" href="#"><i class="typcn typcn-group-outline tx-22"></i><span class="side-menu__label mr-3">ادارة المشتركين</span><i class=""></i></a>
+								<a class="side-menu__item" href="members.html"><i class="typcn typcn-group-outline tx-22"></i><span class="side-menu__label mr-3">ادارة المشتركين</span><i class=""></i></a>
 								
 							</li>
 							<li class="slide">
@@ -93,11 +96,9 @@
 							</li>
 							<li class="slide">
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="bx bx-log-out tx-22"></i><span class="side-menu__label mr-3">تسجيل الخروج</span></a>
-							</li>
-								
+							</li>	
 						</ul>
 					</div>
-					
 				</div>
 			</aside>
 			<!--end main-sidebar -->
@@ -355,15 +356,15 @@
 										<a href="../index.html" >الرئيسية</a>
 									</li>
 									<li class="breadcrumb-item">
-										<a href="#"class="text-muted"> ادارة الأسئلة والاستبيان  </a>
+										<a href="table_program_management.html"class="text-muted"> ادارة الأسئلة والاستبيان </a>
 									</li>
 									
 								</ol>
 							</nav>
 				    	</div>
 				    	<div class="main-dashboard-header-right">
-				    		<div class=" d-flex">
-								<button class="btn btn-warning-gradient btn-with-icon"> اضافة دورة جديدة <i class="bi bi-plus"></i></button>
+				    		<div class="d-flex flex-wrap">
+								<a href="create_programme.html" class="btn btn-warning-gradient btn-with-icon mr-1"> اضافة دورة جديدة<i class="bi bi-plus"></i></a>
 				    		</div>
 				    	</div>
 				    </div>
@@ -376,13 +377,13 @@
 				<!-- container opened -->
 				<div class="container-fluid mt-3">
 					<!-- row -->
-				<div class="row row">
+				<div class="row">
 
 					<!--open filter Top  -->
-					 <div class="col-12">
+					 <div class="col-lg-12">
 						 <div class="card mg-b-20">
-							 <div class="card-body d-flex p-3 w-100">
-								 <div class="form w-60">
+							 <div class="card-body d-flex p-3">
+								 <div class="form">
 									 <i class="fa fa-search"></i>
 									 <input type="text" class="form-control form-input" id="search-table"
 										 placeholder="بحث">
@@ -415,114 +416,193 @@
 										 </option>
 									 </select>
 								 </div>
+
+								 <button class="btn btn-danger btn-sm btn-with-icon mr-1 text-white btnSelectDelete"data-target="#modalDelete" data-toggle="modal" style="display: none;">حذف الصفوف المختارة <i class="bi bi-trash tx-12"></i></button>
+
+								 <div class="mr-auto d-block tx-20">
+									 <a href=""><i class="typcn typcn-calendar-outline"></i></a>
+									 <a href=""><i class="bi bi-grid"></i></a>
+									 <a href=""><i class="bi bi-list bg-black-9 text-white"></i></a>
+								 </div>
 							 </div>
 						 </div>
 					 </div>
 					 <!--closed filter Top  -->
  
 					 <!-- table -->
-					 <div class="col-lg-12">
-						 <div class="card">
-							 <div class="card-body">
-								 <div class="tab-content">
-									 <div class="tab-pane active" id="tab11">
-										 <div class="table-responsive">
-											 <table class="table table-striped mg-b-0 text-md-nowrap">
-												 <thead>
-													 <tr>
-														<th>الرقم</th>
-														<th> اسم الدورة </th>
-														<th>  نوع الأستبيان </th>
-														<th>اسم المدرب</th>
-														<th> مرات الأعادة </th>
-														<th> عدد المستفيدين </th>
-														<th> عدد الأستبيانات المقدمة </th>
-														<th> عدد الأستبيانات لم تقدم  </th>
-														<!-- Filter -->
-														<th>
-															<div class="dropdown">
-																<i aria-expanded="false" aria-haspopup="true" class="bi bi-filter-square tx-20"data-toggle="dropdown" id="dropdownMenuButton" type="button"></i></i>
-																<div  class="dropdown-menu tx-13">
-																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
-																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
-																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
-																	<p class="dropdown-item" href="#"><label class="ckbox"><input type="checkbox"><span>Checkbox Unchecked</span></label></p>
-															    </div>
-															</div>
-														</th>
-														 <th></th>
-													</tr>
-												 </thead>
-												 <tbody id="table-body">
-													<tr>
-														<p class="p-5 text-center d-none" id="empty-message">لا توجد بيانات لعرضها</p>
-													</tr>
-													<tr class="table-rows">
-														<td scope="row"> 1 </td>
-														<td> اسم الدورة</td>
-														<td> استبيان قبلي </td>
-														<td>  محمد عبده </td>
-														<td> 3</td>
-														<td> 9 </td>
-														<td> 66</td>
-														<td> 20 </td>
-														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
-													</tr>
-													<tr class="table-rows">
-														<td scope="row"> 1 </td>
-														<td> اسم الدورة</td>
-														<td> استبيان قبلي </td>
-														<td>  محمد عبده </td>
-														<td> 3</td>
-														<td> 9 </td>
-														<td> 66</td>
-														<td> 20 </td>
-														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
-													</tr>
-													<tr class="table-rows">
-														<td scope="row"> 1 </td>
-														<td> اسم الدورة</td>
-														<td> استبيان قبلي </td>
-														<td>  محمد عبده </td>
-														<td> 3</td>
-														<td> 9 </td>
-														<td> 66</td>
-														<td> 20 </td>
-														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
-													</tr>
-													<tr class="table-rows">
-														<td scope="row"> 1 </td>
-														<td> اسم الدورة</td>
-														<td> استبيان قبلي </td>
-														<td>  محمد عبده </td>
-														<td> 3</td>
-														<td> 9 </td>
-														<td> 66</td>
-														<td> 20 </td>
-														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
-													</tr>
-													<tr class="table-rows">
-														<td scope="row"> 1 </td>
-														<td> اسم الدورة</td>
-														<td> استبيان قبلي </td>
-														<td>  محمد عبده </td>
-														<td> 3</td>
-														<td> 9 </td>
-														<td> 66</td>
-														<td> 20 </td>
-														<td><i class="mdi mdi-dots-horizontal text-gray tx-15"></i></td>
-													</tr>
+					<div class="col-lg-12">
+						<div class="card">
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table table-striped mg-b-0 text-md-nowrap">
+										<thead>
+											<tr class="tableHead">
+												<th><input type="checkbox" class="checkParent"></th>
+												<th>#</th>
+												<th> اسم الدورة </th>
+												<th>  نوع الأستبيان </th>
+												<th>اسم المدرب</th>
+												<th> مرات الأعادة </th>
+												<th> عدد المستفيدين </th>
+												<th> عدد الأستبيانات المقدمة </th>
+												<th> عدد الأستبيانات لم تقدم  </th>
+												<!-- Filter -->
+												<td class="col-filter">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown" class="btn btn-previous p-0"><i class="bi bi-filter-square tx-20"></i></button>
+													<div class="dropdown-menu scrollable-menu" role="menu">
+													</div>		
+												</td>
+											</tr>
+										</thead>
+										<tbody id="table-body">
+											<tr>
+												<p class="p-5 text-center d-none" id="empty-message">لا توجد
+													بيانات لعرضها</p>
+											</tr>
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
 
-													
-													
-												 </tbody>
-											 </table>
-										 </div>
-									 </div>
-								 </div>
-							 </div>
-						 </div>
-					 </div>
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
+
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td> اسم الدورة</td>
+												<td> استبيان قبلي </td>
+												<td>  محمد عبده </td>
+												<td> 3</td>
+												<td> 9 </td>
+												<td> 66</td>
+												<td> 20 </td>
+												<td class="d-flex filter-col-cell">
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"> عرض </a>
+														<a href="" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
+
+
+											
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
 					 <!-- table -->
  
  
@@ -569,15 +649,38 @@
 						 </div>
 					 </div>
 					 <!--closed filter bottom  -->
-				 </div>
-				 <!-- row closed -->
-
-					
-					
+				</div>
+				<!-- row closed -->
 				</div>
 				<!-- container closed -->
 			</div>
 			<!-- Container closed -->
+
+			<!-- delete modal -->
+		    <div class="modal" id="modalDelete">
+		    	<div class="modal-dialog modal-sm" role="document">
+		    		<div class="modal-content modal-content-demo">
+		    			<div class="modal-header">
+		    				<h5 class="modal-title"> حذف مشارك </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+		    			</div>
+		    			<form action="">
+		    			    <div class="modal-body">
+		    			    	<div class="row mg-t-10">
+		    			    		<div class="col-12">
+		    							<p class="text-danger">  هل انت متأكد من عملية الحذف؟</p>
+		    			    			<input class="form-control" required="" type="text" hidden>
+		    			    		</div>	
+		    			    	</div>
+		    			    </div>
+		    			    <div class="modal-footer border-0">
+		    			    	<button class="btn btn-danger btn-with-icon" type="submit"> حذف <i class="bi bi-trash tx-12"></i></button>
+		    			    	<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
+		    			    </div>
+		    			</form>
+		    		</div>
+		    	</div>
+		    </div>
+		    <!-- End delete modal -->
 
 			
 			<!-- Footer opened -->

@@ -74,7 +74,8 @@
 								<a class="side-menu__item" data-toggle="slide"  href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu">
 									<li><a class="slide-item" href="../Stakeholde_management/stakeholder_management.html">الادارة </a></li>
-									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html">العملاء</a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html"> المدربين </a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/customers.html">العملاء</a></li>
 								</ul>
 							</li>
 							<li class="slide">
@@ -372,6 +373,7 @@
 				    	</div>
 				    	<div class="main-dashboard-header-right">
 				    		<div class=" d-flex">
+								<a href="add_tests.html" class="btn btn-warning-gradient btn-with-icon btn-md mr-1"> اضافة اسئلة <i class="bi bi-plus"></i></a>
 								<button class="btn btn-warning-gradient btn-with-icon btn-md mr-1" data-target="#select2modal" data-toggle="modal"> اضافة اختبار جديد <i class="bi bi-plus"></i></button>
 				    		</div>
 				    	</div>
@@ -450,6 +452,8 @@
 												<table class="table table-striped mg-b-0 text-md-nowrap">
 													<thead>
 														<tr>
+															<th><input type="checkbox" class="checkParent"></th>
+												            <th>#</th>
 															<th class="tx-15">
 																اسم الأختبار
 														   </th>
@@ -478,6 +482,8 @@
 															<p class="p-5 text-center d-none empty-message"> لايوجد  </p>
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
 															<td> اختبار قبلي </td>
@@ -485,9 +491,20 @@
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
 															<td> اختبار قبلي </td>
@@ -495,9 +512,20 @@
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
 															<td> اختبار قبلي </td>
@@ -505,9 +533,20 @@
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
 															<td> اختبار قبلي </td>
@@ -515,8 +554,38 @@
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
+														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
+															<td scope="row"> مادة </td>
+															<td>6 دورات</td>
+															<td> اختبار قبلي </td>
+															<td>12</td>
+															<td>50</td>
+															<td>40</td>
+															<td>90%</td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
+														</tr>	
 													</tbody>
 												</table>
 											</div>
@@ -526,6 +595,8 @@
 												<table class="table table-striped mg-b-0 text-md-nowrap">
 													<thead>
 														<tr>
+															<th><input type="checkbox" class="checkParent"></th>
+												            <th>#</th>
 															<th class="tx-15">
 																اسم الأختبار
 														   </th>
@@ -554,44 +625,88 @@
 															<p class="p-5 text-center d-none empty-message"> لايوجد  </p>
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار بعدي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار بعدي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار بعدي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار بعدي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 													</tbody>
 												</table>
@@ -602,6 +717,8 @@
 												<table class="table table-striped mg-b-0 text-md-nowrap">
 													<thead>
 														<tr>
+															<th><input type="checkbox" class="checkParent"></th>
+												            <th>#</th>
 															<th class="tx-15">
 																اسم الأختبار
 														   </th>
@@ -630,44 +747,88 @@
 															<p class="p-5 text-center d-none empty-message"> لايوجد  </p>
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار تفاعلي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار تفاعلي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار تفاعلي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 														<tr class="table-rows">
+															<td><input type="checkbox" class="checkChild"></td>
+											                <td>1</td>              
 															<td scope="row"> مادة </td>
 															<td>6 دورات</td>
-															<td> اختبار قبلي </td>
+															<td> اختبار تفاعلي </td>
 															<td>12</td>
 															<td>50</td>
 															<td>40</td>
 															<td>90%</td>
-															<td><i class="mdi mdi-dots-horizontal text-gray"></i></td>
+															<td class="d-flex filter-col-cell">
+																<!-- dropdown-menu -->
+																<button data-toggle="dropdown" class="btn btn-previous btn-sm btn-block"><i class="si si-options-vertical text-gray tx-13" ></i></button>
+																<div class="dropdown-menu">
+																	<a href="#" class="dropdown-item" data-target="#modaledit" data-toggle="modal"> تحرير </a>
+																	<a href="questions_and_tests_management.html" class="dropdown-item" > عرض </a>
+																	<a href="#" class="dropdown-item text-danger"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+																</div>
+															</td>	
+
 														</tr>
 													</tbody>
 												</table>
@@ -775,7 +936,32 @@
 		</div>
 		<!-- End add modal -->
 
-		
+		<!-- delete modal -->
+		<div class="modal" id="modalDelete">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content modal-content-demo">
+					<div class="modal-header">
+						<h5 class="modal-title"> حذف الاختبار </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<form action="">
+						<div class="modal-body">
+							<div class="row mg-t-10">
+								<div class="col-12">
+									<p class="text-danger">  هل انت متأكد من عملية الحذف؟</p>
+									<input class="form-control" required="" type="text" hidden>
+								</div>	
+							</div>
+						</div>
+						<div class="modal-footer border-0">
+							<button class="btn btn-danger btn-with-icon" type="submit"> حذف <i class="bi bi-trash tx-12"></i></button>
+							<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- End delete modal -->
+
 
 		<!-- Back-to-top -->
 		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
@@ -812,6 +998,7 @@
 		<!-- custom js -->
 		<script src="../assets/js/custom.js"></script>
 		<script src="../assets/js/table-and-Tap.js"></script>
+		<!-- <script src="../assets/js/table.js"></script> -->
 
 	</body>
 </html>

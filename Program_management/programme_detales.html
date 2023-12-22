@@ -81,7 +81,8 @@
 								<a class="side-menu__item" data-toggle="slide"  href="#"><i class="si si-people tx-22"></i><span class="side-menu__label mr-3">اصحاب المصلحة</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu">
 									<li><a class="slide-item" href="../Stakeholde_management/stakeholder_management.html">الادارة </a></li>
-									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html">العملاء</a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/Trainers_management.html"> المدربين </a></li>
+									<li><a class="slide-item" href="../Stakeholde_management/customers.html">العملاء</a></li>
 								</ul>
 							</li>
 							<li class="slide">
@@ -368,7 +369,7 @@
 										<a href="../index.html" >الرئيسية</a>
 									</li>
 									<li class="breadcrumb-item">
-										<a href="#"class="text-muted">البرامج</a>
+										<a href="table_program_management.html"class="text-muted">البرامج</a>
 									</li>
 									<li class="breadcrumb-item">
 										<a href="#" class="text-muted"> برنامج تطوير المهارات الشخصية </a>
@@ -376,13 +377,13 @@
 								</ol>
 							</nav>
 				    	</div>
-				    	<div class="main-dashboard-header-right">
-				    		<div class=" d-flex">
-								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1 btn-export"> تصدير <i class="ti-stats-up project"></i></button>
-								<button class="btn btn-outline-light btn-with-icon mr-1"> اعدادات صفحة الويب  <i class="icon ion-ios-settings"></i></button>
-								<button class="btn btn-outline-light btn-with-icon mr-1"> اعدادات  <i class="icon ion-ios-settings"></i></button>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1">   اضافة دورة جديدة  <i class="bi bi-plus"></i></button>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1">  عرض صفحة الويب <i class="icon ion-ios-share-alt"></i></button>
+				    	<div class="main-dashboard-header-right ">
+				    		<div class=" d-flex flex-wrap">
+								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1 btn-export mb-1"> تصدير <i class="ti-stats-up project"></i></button>
+								<button class="btn btn-outline-light btn-with-icon mr-1 mb-1"> اعدادات صفحة الويب  <i class="icon ion-ios-settings"></i></button>
+								<button class="btn btn-outline-light btn-with-icon mr-1 mb-1"> اعدادات  <i class="icon ion-ios-settings"></i></button>
+								<a href="create_programme.html" class="btn btn-warning-gradient btn-with-icon mr-1 mb-1">   اضافة دورة جديدة  <i class="bi bi-plus"></i></a>
+								<button class="btn btn-warning-gradient btn-with-icon mr-1 mb-1">  عرض صفحة الويب <i class="icon ion-ios-share-alt"></i></button>
 				    		</div>
 				    	</div>
 				    </div>
@@ -394,7 +395,7 @@
 				<br><br><br><br><br>
 				<!-- container opened -->
 				<div class="container-fluid mt-3">
-					<!-- row -->
+				<!-- row -->
 				<div class="row">
 
 					<!--open filter Top  -->
@@ -517,11 +518,13 @@
 														class="btn btn-previous btn-sm btn-block"><i
 															class="si si-options-vertical text-gray tx-12"></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>
 											</tr>
+
+
 											<tr class="table-rows">
 												<td><input type="checkbox" class="checkChild"></td>
 												<td>1</td>
@@ -542,43 +545,14 @@
 												<th> # </th>
 												<th> # </th>
 												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>													<!-- dropdown-menu -->
+													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
+													<!-- dropdown-menu -->
 													<button data-toggle="dropdown"
 														class="btn btn-previous btn-sm btn-block"><i
 															class="si si-options-vertical text-gray tx-12"></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
-													</div>
-												</td>
-											</tr>
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>
 											</tr>
@@ -603,16 +577,18 @@
 												<th> # </th>
 												<th> # </th>
 												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>													<!-- dropdown-menu -->
+													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
+													<!-- dropdown-menu -->
 													<button data-toggle="dropdown"
 														class="btn btn-previous btn-sm btn-block"><i
 															class="si si-options-vertical text-gray tx-12"></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>
 											</tr>
+
 											<tr class="table-rows">
 												<td><input type="checkbox" class="checkChild"></td>
 												<td>1</td>
@@ -633,16 +609,19 @@
 												<th> # </th>
 												<th> # </th>
 												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>													<!-- dropdown-menu -->
+													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
+													<!-- dropdown-menu -->
 													<button data-toggle="dropdown"
 														class="btn btn-previous btn-sm btn-block"><i
 															class="si si-options-vertical text-gray tx-12"></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>
 											</tr>
+
+
 											<tr class="table-rows">
 												<td><input type="checkbox" class="checkChild"></td>
 												<td>1</td>
@@ -663,16 +642,50 @@
 												<th> # </th>
 												<th> # </th>
 												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>													<!-- dropdown-menu -->
+													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
+													<!-- dropdown-menu -->
 													<button data-toggle="dropdown"
 														class="btn btn-previous btn-sm btn-block"><i
 															class="si si-options-vertical text-gray tx-12"></i></button>
 													<div class="dropdown-menu">
-														<a href="" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"> حذف </a>
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
 													</div>
 												</td>
-											</tr>	
+											</tr>
+
+
+											<tr class="table-rows">
+												<td><input type="checkbox" class="checkChild"></td>
+												<td>1</td>
+												<td scope="row">برنامج التدريب الأساسي.</td>
+												<td>3</td>
+												<td class="client-name">على حسن على</td>
+												<td> مستوي اول </td>
+												<td>12/06/2023</td>
+												<td>5ايام</td>
+												<td> عربي </td>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<th> # </th>
+												<td class="d-flex filter-col-cell">
+													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
+													<!-- dropdown-menu -->
+													<button data-toggle="dropdown"
+														class="btn btn-previous btn-sm btn-block"><i
+															class="si si-options-vertical text-gray tx-12"></i></button>
+													<div class="dropdown-menu">
+														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
+														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+													</div>
+												</td>
+											</tr>
 										</tbody>
 									</table>
 								</div>
@@ -725,8 +738,8 @@
 						 </div>
 					 </div>
 					 <!--closed filter bottom  -->
-				 </div>
-				 <!-- row closed -->
+				</div>
+				<!-- row closed -->
 
 					
 					
@@ -735,7 +748,7 @@
 			</div>
 			<!-- Container closed -->
 
-			<!-- delete modal -->
+		<!-- delete modal -->
 		<div class="modal" id="modalDelete">
 			<div class="modal-dialog modal-sm" role="document">
 				<div class="modal-content modal-content-demo">
