@@ -358,3 +358,13 @@ $(function() {
 				});
 			  });
 			});
+
+
+			$(document).ready(function() {
+				$('.edit-buttonSelect').on('click', function() {
+				  var selectElement = $(this).closest('.webflow-style-input').find('select');
+		  
+				  // إزالة خاصية disabled
+				  selectElement.prop('disabled', false);
+				});
+			  });

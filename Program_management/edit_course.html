@@ -70,6 +70,17 @@
 
 
 
+		<style>
+		.custom-select {
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+        }
+        /* أسلوب تخصيصي لعنصر select بدون علامة أو أيقونة */
+        .custom-select::after {
+          content: '' !important; /* لا يوجد محتوى (لا تعرض علامة) */
+        }
+		</style>
 
 		
 	</head>
@@ -475,11 +486,20 @@
 												<div class="col-lg-6">
 													<label for="example"> هل يوجد إختبار </label>
 													<div class="webflow-style-input">
-														<input class="input_no_border readonly" type="text" value="another value" readonly></input>
-														<div class="d-flex ml-2">
+														<select class="form-control select2 input_no_border custom-select" disabled>
+															<option selected value="Firefox">
+																نعم 
+															</option>
+															<option value="Firefox">
+																لا
+															</option>		
+														</select>
+														<!-- <input class="input_no_border readonly" type="text" value="another value" readonly></input> -->
+														<div class="d-flex ml-2 mb-0">
 														  <p class="ml-3"> تحرير </p>
-														  <i class="bi bi-pen edit-button" ></i>
-														</div>
+														  <i class="bi bi-pen edit-buttonSelect" ></i>
+														</div>														<div class="d-flex ml-2">
+														  
 													</div>										
 												</div>
 											</div>
@@ -490,7 +510,7 @@
 												<div class="col-lg-6 mb-3">
 													<label for="example"> يبدأ في </label>
 													<div class="webflow-style-input">
-														<input class="input_no_border readonly" type="text" value="another value" readonly></input>
+														<input class="input_no_border readonly" type="date" value="another value" readonly></input>
 														<div class="d-flex ml-2">
 														  <p class="ml-3"> تحرير </p>
 														  <i class="bi bi-pen edit-button" ></i>
@@ -501,10 +521,18 @@
 												<div class="col-lg-6 mb-3">
 													<label for="example"> هل يوجد شهادة </label>
 													<div class="webflow-style-input">
-														<input class="input_no_border readonly" type="text" value="another value" readonly></input>
-														<div class="d-flex ml-2">
+														<select class="form-control select2 input_no_border custom-select" disabled>
+															<option selected value="Firefox">
+																نعم 
+															</option>
+															<option value="Firefox">
+																لا
+															</option>		
+														</select>
+														<!-- <input class="input_no_border readonly" type="text" value="another value" readonly></input> -->
+														<div class="d-flex ml-2 mb-0">
 														  <p class="ml-3"> تحرير </p>
-														  <i class="bi bi-pen edit-button" ></i>
+														  <i class="bi bi-pen edit-buttonSelect" ></i>
 														</div>
 													</div>	
 												</div>
@@ -558,11 +586,19 @@
 												<div class="col-lg-6 mb-3">
 													<label for="example"> المستوى </label>
 													<div class="webflow-style-input">
-														<input class="input_no_border readonly" type="text" value="another value" readonly></input>
-														<div class="d-flex ml-2">
+														<select class="form-control select2 input_no_border custom-select" disabled>
+															<option selected value="Firefox">
+																اول 
+															</option>
+															<option value="Firefox">
+																ثاني
+															</option>		
+														</select>
+														<!-- <input class="input_no_border readonly" type="text" value="another value" readonly></input> -->
+														<div class="d-flex ml-2 mb-0">
 														  <p class="ml-3"> تحرير </p>
-														  <i class="bi bi-pen edit-button" ></i>
-														</div>
+														  <i class="bi bi-pen edit-buttonSelect" ></i>
+														</div>	
 													</div>	
 												</div>
 
@@ -582,10 +618,18 @@
 												<div class="col-lg-6 mb-3">
 													<label for="example"> لغة الدورة </label>
 													<div class="webflow-style-input">
-														<input class="input_no_border readonly" type="text" value="another value" readonly></input>
-														<div class="d-flex ml-2">
+														<select class="form-control select2 input_no_border custom-select" disabled>
+															<option selected value="Firefox">
+																العربية
+															</option>
+															<option value="Firefox">
+																الانجليزية
+															</option>		
+														</select>
+														<!-- <input class="input_no_border readonly" type="text" value="another value" readonly></input> -->
+														<div class="d-flex ml-2 mb-0">
 														  <p class="ml-3"> تحرير </p>
-														  <i class="bi bi-pen edit-button" ></i>
+														  <i class="bi bi-pen edit-buttonSelect" ></i>
 														</div>
 													</div>	
 												</div>

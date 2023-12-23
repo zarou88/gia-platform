@@ -4419,7 +4419,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     color: #737f9e;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
-    background-color: #dde2ef;
+  
     opacity: 1; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7587,7 +7587,7 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     background-image: none; }
   .custom-select:disabled {
     color: #737f9e;
-    background-color: #dde2ef; }
+    background-color: #fff !important; }
   .custom-select::-ms-expand {
     display: none; }
 
@@ -21537,7 +21537,8 @@ object, embed, video {
     padding-right: 31px; }
 
 .app-sidebar .slide.active .side-menu__item {
-  background: transparent; }
+  background: transparent; 
+}
 
 .app-sidebar__user .user-pro-body {
   display: block;
@@ -52955,7 +52956,13 @@ a.demo {
 
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
+
+
 .Attendance{margin-top: -50px;position: absolute; left: 50px !important;}
-	 */
+
+
+.select2-container--default.select2-container--disabled .select2-selection--single {background-color: #fff !important;}
+.custom-select:disabled {
+  color: #737f9e;
+  background-color: #dde2ef;
+}
