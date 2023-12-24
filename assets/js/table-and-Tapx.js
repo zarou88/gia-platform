@@ -15,10 +15,6 @@ for (let j = 0; j < tableTabs.length; j++) {
         const tablePaganiteNext = tableTabs[j].getElementsByClassName("table-paganite-next")[0];
         const tablePaganitePrev = tableTabs[j].getElementsByClassName("table-paganite-prev")[0];
         const emptyMessage = tableContainer[index].getElementsByClassName("empty-message")[0];
-        const colFilter = document.getElementsByClassName("col-filter");
-        const colFilterMenu = colFilter[index].getElementsByClassName("dropdown-menu")[0];
-        const checkFilter = colFilterMenu.getElementsByTagName("input");
-        const tableHead = document.getElementsByClassName("tableHead")[index];
         const rows = allRows[index];
         let rowsNumber = tableRowsNumber[0].value == "all" ? rows.length : Number(tableRowsNumber[0].value)
         let activePage = 1;
@@ -34,36 +30,7 @@ for (let j = 0; j < tableTabs.length; j++) {
                 tablePaganiteNext.disabled = false;
             }
         }
-        const createElementFromHTML = (htmlString) => {
-            const div = document.createElement('div');
-            div.innerHTML = htmlString.trim();
-            return div.firstChild;
-        }
-        const dropdownItemSchema = (label, value) => `
-        <div class="dropdown-item"><label class="ckbox"><input type="checkbox" ${value && "checked"}><span>${label}</span></label></div>
-        `
-        let cols = [];
-        const clearFilter = () => {
-            while (colFilterMenu.children.length) colFilterMenu.children[0].remove()
-        }
-        clearFilter()
-        Array.from(tableHead.children).some((ch, i) => {
-            if (i !== 0 && i !== 1) {
-                if (ch.classList.contains("col-filter")) return;
-                let values = []
-                rows.forEach(row => {
-                    values.push(row.children[i].textContent.replace(/[\r\n]/gm, '').replace(/[\t]/gm, ' ').trim().split(" ").filter(str => str !== "").join(" "))
-                })
-                const newObj = {
-                    index: i,
-                    label: ch.textContent.replace(/[\r\n]/gm, '').replace(/[\t]/gm, ' ').trim().split(" ").filter(str => str !== "").join(" "),
-                    values,
-                    show: i <= 8
-                }
-                cols.push(newObj)
-                colFilterMenu.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
-            }
-        })
+
         const updateTable = (newRows) => {
             while (tableBody.children[0]) {
                 tableBody.children[0].remove()
@@ -76,10 +43,6 @@ for (let j = 0; j < tableTabs.length; j++) {
             let start = (activePage - 1) * rowsNumber;
             let end = activePage * rowsNumber;
             Array.from(newRows).forEach((row, index) => {
-                Array.from(row.children).forEach(ch => ch.classList.remove("d-none"))
-                cols.filter(c => c.show == false).forEach(c => {
-                    row.children[c.index].classList.add("d-none")
-                });
                 if (index >= start && index < end) {
                     tableBody.appendChild(row);
                 }
@@ -105,25 +68,6 @@ for (let j = 0; j < tableTabs.length; j++) {
         searchFilter(searchTable.value)
 
         searchTable.addEventListener("input", e => searchFilter(e.target.value))
-
-        const checkHead = () => {
-            Array.from(tableHead.children).forEach((ch, i) => {
-                ch.classList.remove("d-none");
-            })
-            cols.filter(c => c.show == false).forEach(c => {
-                tableHead.children[c.index].classList.add("d-none")
-            });
-        }
-
-        checkHead()
-
-        Array.from(checkFilter).forEach((chk, i) => {
-            chk.addEventListener("change", e => {
-                cols[i].show = e.target.checked;
-                checkHead()
-                searchFilter(searchTable.value)
-            })
-        })
 
         Array.from(tableRowsNumber).forEach(trn => {
             trn.addEventListener("change", e => {
@@ -155,47 +99,3 @@ for (let j = 0; j < tableTabs.length; j++) {
         }
     })
 }
-
-
-
-
-
-
-
-
-// input all chick
-$(document).ready(function () {
-    // عند النقر على الصندوق الرئيسي
-    $('.checkParent').on('change', function () {
-        // استخدم $(this).is(':checked') للتحقق مما إذا كان صندوق الاختيار الرئيسي محددًا أم لا
-        var isChecked = $(this).is(':checked');
-
-        // قم بتحديد صناديق الأطفال في نفس الجدول
-        $(this).closest('table').find('.checkChild').prop('checked', isChecked);
-
-        // إظهار أو إخفاء زر الحذف
-        if (isChecked) {
-            $('.btnSelectDelete').show();
-        } else {
-            $('.btnSelectDelete').hide();
-        }
-    });
-
-    // عند النقر على صناديق الأطفال
-    $('.checkChild').on('change', function () {
-        // استخدم $('.checkChild:checked').length > 0 للتحقق مما إذا كان هناك أي صندوق فرعي محدد
-        var anyChildChecked = $('.checkChild:checked').length > 0;
-
-        // إظهار أو إخفاء زر الحذف
-        if (anyChildChecked) {
-            $('.btnSelectDelete').show();
-        } else {
-            $('.btnSelectDelete').hide();
-        }
-
-        // تحقق من حالة الصندوقات الفرعية لتحديد حالة الصندوق الرئيسي
-        var allChildrenChecked = $(this).closest('table').find('.checkChild').length === $(this).closest('table').find('.checkChild:checked').length;
-        $(this).closest('table').find('.checkParent').prop('checked', allChildrenChecked);
-    });
-});
-
