@@ -368,3 +368,23 @@ $(function() {
 				  selectElement.prop('disabled', false);
 				});
 			  });
+
+
+//  checkBox Master Roles
+$(document).ready(function () {
+	// عند النقر على صندوق الاختيار الرئيسي
+	$('.checkmaster').on('change', function () {
+	  // قم بتعيين حالة disabled لجميع صناديق الاختيار
+	  $('.checkmaster').each(function () {
+		$('.checkRole').prop('disabled', $(this).prop('checked'));
+	  });
+	});
+
+	// عند النقر على صناديق الاختيار الفرعية
+	$('.checkRole').on('change', function () {
+	  // قم بإزالة حالة disabled عند إلغاء الاختيار
+	  if (!$(this).prop('checked')) {
+		$('.checkRole').prop('disabled', false);
+	  }
+	});
+});

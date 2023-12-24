@@ -25422,7 +25422,7 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
   font-weight: 700;
   text-transform: uppercase;
   height: 38px; }
-
+  .main-column-signup span{font-family: 'Tajawal', sans-serif;}
 .main-column-signup {
   background-color: #fff;
   padding: 30px;
@@ -25432,7 +25432,7 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
 
 @media (min-width: 576px) {
   .main-column-signup {
-    padding: 40px;
+    padding: 40px !important;
     width: 500px; } }
 
 @media (min-width: 992px) {
@@ -25452,11 +25452,13 @@ input.parsley-error:focus, textarea.parsley-error:focus, input.parsley-success:f
 
 .main-signup-header label {
   color: #a5a0b1; }
-
+  .main-signup-header .row{margin: 20px 0px;}
 .main-signup-header .form-control {
   color: #14112d;
   font-weight: 500;
   border-width: 2px;
+  border: 0px;
+  border-bottom: 2px solid #000;
   border-color: #e3e3e3; }
   .main-signup-header .form-control:focus {
     border-color: #b9c2d8;
@@ -52699,7 +52701,7 @@ flex-wrap: wrap; } }
 .side-menu__item .side-menu__label,h1,h2,h3,h4,h5,h6,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
   font-family: 'Cairo', sans-serif;
 }
-p,span,td,button,label,option,select,input,a{font-family: 'Tajawal', sans-serif;}
+p,span,td,button,label,option,select,input,a{font-family: 'Tajawal', sans-serif !important;}
 .wizard > .steps {
   padding: 30px;
   position: absolute;
@@ -52966,3 +52968,5 @@ a.demo {
   color: #737f9e;
   background-color: #dde2ef;
 }
+
+.border-bottom-1{ border-bottom: 1px solid #c7c7c7;}
