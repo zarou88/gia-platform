@@ -7,31 +7,39 @@ for (let j = 0; j < tableTabs.length; j++) {
         allRows.push(Array.from(tableRows))
     }
     const actions = index => {
-        const tableBody = tableContainer[index].getElementsByClassName("table-body")[0];
-        const searchTable = tableTabs[j].getElementsByClassName("search-table")[0];
-        const tableRowsNumber = tableTabs[j].getElementsByClassName("table-rows-number");
-        const tablePages = tableTabs[j].getElementsByClassName("table-pages")[0];
-        const tableStatus = tableTabs[j].getElementsByClassName("table-status")[0];
-        const tablePaganiteNext = tableTabs[j].getElementsByClassName("table-paganite-next")[0];
-        const tablePaganitePrev = tableTabs[j].getElementsByClassName("table-paganite-prev")[0];
-        const emptyMessage = tableContainer[index].getElementsByClassName("empty-message")[0];
+        const tableBody = tableContainer[index]?.getElementsByClassName("table-body")[0];
+        const searchTable = tableTabs[j]?.getElementsByClassName("search-table")[0];
+        const tableRowsNumber = tableTabs[j]?.getElementsByClassName("table-rows-number");
+        const tablePages = tableTabs[j]?.getElementsByClassName("table-pages")[0];
+        const tableStatus = tableTabs[j]?.getElementsByClassName("table-status")[0];
+        const tablePaganiteNext = tableTabs[j]?.getElementsByClassName("table-paganite-next")[0];
+        const tablePaganitePrev = tableTabs[j]?.getElementsByClassName("table-paganite-prev")[0];
+        const emptyMessage = tableContainer[index]?.getElementsByClassName("empty-message")[0];
         const colFilter = document.getElementsByClassName("col-filter");
-        const colFilterMenu = colFilter[index].getElementsByClassName("dropdown-menu")[0];
-        const checkFilter = colFilterMenu.getElementsByTagName("input");
+        const colFilterMenu = colFilter[index]?.getElementsByClassName("dropdown-menu")[0];
+        const checkFilter = colFilterMenu?.getElementsByTagName("input");
         const tableHead = document.getElementsByClassName("tableHead")[index];
         const rows = allRows[index];
         let rowsNumber = tableRowsNumber[0].value == "all" ? rows.length : Number(tableRowsNumber[0].value)
         let activePage = 1;
         const checkBtns = (pages) => {
             if (activePage == 1) {
-                tablePaganitePrev.disabled = true;
+                if (tablePaganitePrev) {
+                    tablePaganitePrev.disabled = true;
+                }
             } else {
-                tablePaganitePrev.disabled = false;
+                if (tablePaganitePrev) {
+                    tablePaganitePrev.disabled = false;
+                }
             }
             if (activePage == pages) {
-                tablePaganiteNext.disabled = true;
+                if (tablePaganiteNext) {
+                    tablePaganiteNext.disabled = true;
+                }
             } else {
-                tablePaganiteNext.disabled = false;
+                if (tablePaganiteNext) {
+                    tablePaganiteNext.disabled = false;
+                }
             }
         }
         const createElementFromHTML = (htmlString) => {
@@ -44,7 +52,7 @@ for (let j = 0; j < tableTabs.length; j++) {
         `
         let cols = [];
         const clearFilter = () => {
-            while (colFilterMenu.children.length) colFilterMenu.children[0].remove()
+            while (colFilterMenu?.children.length) colFilterMenu.children[0].remove()
         }
         clearFilter()
         Array.from(tableHead.children).some((ch, i) => {
@@ -52,7 +60,9 @@ for (let j = 0; j < tableTabs.length; j++) {
                 if (ch.classList.contains("col-filter")) return;
                 let values = []
                 rows.forEach(row => {
-                    values.push(row.children[i].textContent.replace(/[\r\n]/gm, '').replace(/[\t]/gm, ' ').trim().split(" ").filter(str => str !== "").join(" "))
+                    if (row.children[i]) {
+                        values.push(row.children[i].textContent.replace(/[\r\n]/gm, '').replace(/[\t]/gm, ' ').trim().split(" ").filter(str => str !== "").join(" "))
+                    }
                 })
                 const newObj = {
                     index: i,
@@ -61,17 +71,17 @@ for (let j = 0; j < tableTabs.length; j++) {
                     show: i <= 8
                 }
                 cols.push(newObj)
-                colFilterMenu.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
+                colFilterMenu?.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
             }
         })
         const updateTable = (newRows) => {
-            while (tableBody.children[0]) {
+            while (tableBody?.children[0]) {
                 tableBody.children[0].remove()
             }
             if (newRows.length) {
-                emptyMessage.classList.add("d-none")
+                emptyMessage?.classList.add("d-none")
             } else {
-                emptyMessage.classList.remove("d-none")
+                emptyMessage?.classList.remove("d-none")
             }
             let start = (activePage - 1) * rowsNumber;
             let end = activePage * rowsNumber;
@@ -81,13 +91,17 @@ for (let j = 0; j < tableTabs.length; j++) {
                     row.children[c.index].classList.add("d-none")
                 });
                 if (index >= start && index < end) {
-                    tableBody.appendChild(row);
+                    tableBody?.appendChild(row);
                 }
             })
             let pages = Math.ceil(newRows.length / rowsNumber);
             checkBtns(pages)
-            tablePages.innerHTML = `${activePage}/${pages == 0 ? 1 : pages}`
-            tableStatus.innerHTML = `${start + 1}-${end > newRows.length ? newRows.length : end} of ${newRows.length}`
+            if (tablePages) {
+                tablePages.innerHTML = `${activePage}/${pages == 0 ? 1 : pages}`
+            }
+            if (tableStatus) {
+                tableStatus.innerHTML = `${start + 1}-${end > newRows.length ? newRows.length : end} of ${newRows.length}`
+            }
         }
 
         const searchFilter = e => {
@@ -102,47 +116,48 @@ for (let j = 0; j < tableTabs.length; j++) {
             }))
         }
 
-        searchFilter(searchTable.value)
+        searchFilter(searchTable?.value)
 
-        searchTable.addEventListener("input", e => searchFilter(e.target.value))
+        searchTable?.addEventListener("input", e => searchFilter(e.target.value))
 
         const checkHead = () => {
-            Array.from(tableHead.children).forEach((ch, i) => {
+            Array.from(tableHead?.children).forEach(ch => {
                 ch.classList.remove("d-none");
             })
             cols.filter(c => c.show == false).forEach(c => {
-                tableHead.children[c.index].classList.add("d-none")
+                tableHead?.children[c.index].classList.add("d-none")
             });
         }
 
         checkHead()
-
-        Array.from(checkFilter).forEach((chk, i) => {
-            chk.addEventListener("change", e => {
-                cols[i].show = e.target.checked;
-                checkHead()
-                searchFilter(searchTable.value)
+        if (checkFilter) {
+            Array.from(checkFilter).forEach((chk, i) => {
+                chk.addEventListener("change", e => {
+                    cols[i].show = e.target.checked;
+                    checkHead()
+                    searchFilter(searchTable?.value)
+                })
             })
-        })
+        }
 
         Array.from(tableRowsNumber).forEach(trn => {
             trn.addEventListener("change", e => {
                 for (let i = 0; i < tableRowsNumber.length; i++) tableRowsNumber[i].value = e.target.value
                 rowsNumber = e.target.value == "all" ? rows.length : Number(e.target.value);
                 activePage = 1;
-                searchFilter(searchTable.value)
+                searchFilter(searchTable?.value)
             })
         })
 
-        tablePaganiteNext.addEventListener("click", () => {
+        tablePaganiteNext?.addEventListener("click", () => {
             activePage++;
-            searchFilter(searchTable.value);
+            searchFilter(searchTable?.value);
 
         })
 
-        tablePaganitePrev.addEventListener("click", () => {
+        tablePaganitePrev?.addEventListener("click", () => {
             activePage--;
-            searchFilter(searchTable.value);
+            searchFilter(searchTable?.value);
         })
     }
     actions(0)
@@ -155,9 +170,6 @@ for (let j = 0; j < tableTabs.length; j++) {
         }
     })
 }
-
-
-
 
 
 

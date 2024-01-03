@@ -10,8 +10,8 @@ const tablePaganiteNext = document.getElementById("table-paganite-next");
 const tablePaganitePrev = document.getElementById("table-paganite-prev");
 const emptyMessage = document.getElementById("empty-message");
 const colFilter = document.getElementsByClassName("col-filter");
-const colFilterMenu = colFilter[0].getElementsByClassName("dropdown-menu")[0];
-const checkFilter = colFilterMenu.getElementsByTagName("input");
+const colFilterMenu = colFilter[0]?.getElementsByClassName("dropdown-menu")[0];
+const checkFilter = colFilterMenu?.getElementsByTagName("input");
 const tableHead = document.getElementsByClassName("tableHead")[0];
 
 const rows = Array.from(tableRows);
@@ -20,14 +20,22 @@ let activePage = 1;
 
 const checkBtns = (pages) => {
     if (activePage == 1) {
-        tablePaganitePrev.disabled = true;
+        if (tablePaganitePrev) {
+            tablePaganitePrev.disabled = true;
+        }
     } else {
-        tablePaganitePrev.disabled = false;
+        if (tablePaganitePrev) {
+            tablePaganitePrev.disabled = false;
+        }
     }
     if (activePage == pages) {
-        tablePaganiteNext.disabled = true;
+        if (tablePaganiteNext) {
+            tablePaganiteNext.disabled = true;
+        }
     } else {
-        tablePaganiteNext.disabled = false;
+        if (tablePaganiteNext) {
+            tablePaganiteNext.disabled = false;
+        }
     }
 }
 const createElementFromHTML = (htmlString) => {
@@ -53,18 +61,17 @@ Array.from(tableHead.children).some((ch, i) => {
             show: i <= 8
         }
         cols.push(newObj)
-        colFilterMenu.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
+        colFilterMenu?.appendChild(createElementFromHTML(dropdownItemSchema(newObj.label, newObj.show)))
     }
 })
-
 const updateTable = (newRows) => {
     while (tableBody.children[0]) {
         tableBody.children[0].remove()
     }
     if (newRows.length) {
-        emptyMessage.classList.add("d-none")
+        emptyMessage?.classList.add("d-none")
     } else {
-        emptyMessage.classList.remove("d-none")
+        emptyMessage?.classList.remove("d-none")
     }
     let start = (activePage - 1) * rowsNumber;
     let end = activePage * rowsNumber;
@@ -79,8 +86,12 @@ const updateTable = (newRows) => {
     })
     let pages = Math.ceil(newRows.length / rowsNumber);
     checkBtns(pages)
-    tablePages.innerHTML = `${activePage}/${pages == 0 ? 1 : pages}`
-    tableStatus.innerHTML = `${start + 1}-${end > newRows.length ? newRows.length : end} of ${newRows.length}`
+    if (tablePages) {
+        tablePages.innerHTML = `${activePage}/${pages == 0 ? 1 : pages}`
+    }
+    if (tableStatus) {
+        tableStatus.innerHTML = `${start + 1}-${end > newRows.length ? newRows.length : end} of ${newRows.length}`
+    }
 }
 
 updateTable(rows)
@@ -98,13 +109,13 @@ const searchFilter = e => {
 }
 
 
-searchTable.addEventListener("input", e => searchFilter(e.target.value))
+searchTable?.addEventListener("input", e => searchFilter(e.target.value))
 Array.from(tableRowsNumber).forEach(trn => {
     trn.addEventListener("change", e => {
         for (let i = 0; i < tableRowsNumber.length; i++) tableRowsNumber[i].value = e.target.value
         rowsNumber = e.target.value == "all" ? rows.length : Number(e.target.value);
         activePage = 1;
-        searchFilter(searchTable.value)
+        searchFilter(searchTable?.value)
     })
 })
 
@@ -123,19 +134,19 @@ Array.from(checkFilter).forEach((chk, i) => {
     chk.addEventListener("change", e => {
         cols[i].show = e.target.checked;
         checkHead()
-        searchFilter(searchTable.value)
+        searchFilter(searchTable?.value)
     })
 })
 
-tablePaganiteNext.addEventListener("click", () => {
+tablePaganiteNext?.addEventListener("click", () => {
     activePage++;
-    searchFilter(searchTable.value);
+    searchFilter(searchTable?.value);
 
 })
 
 tablePaganitePrev.addEventListener("click", () => {
     activePage--;
-    searchFilter(searchTable.value);
+    searchFilter(searchTable?.value);
 })
 
 

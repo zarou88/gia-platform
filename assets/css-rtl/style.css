@@ -52698,10 +52698,10 @@ flex-wrap: wrap; } }
 
 
 /* ############################################################################### */
-.side-menu__item .side-menu__label,h1,h2,h3,h4,h5,h6,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a{
+.side-menu__item .side-menu__label,h1,h2,h3,h4,h5,h6,.main-content-label,.panel-tabs a ,th,.list-unstyled,.breadcrumb-item a,a{
   font-family: 'Cairo', sans-serif;
 }
-p,span,td,button,label,option,select,input,a{font-family: 'Tajawal', sans-serif !important;}
+p,span,td,button,label,option,select,input{font-family: 'Tajawal', sans-serif;}
 .wizard > .steps {
   padding: 30px;
   position: absolute;

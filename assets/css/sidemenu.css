@@ -1443,15 +1443,14 @@ slide is-expanded side-menu__item {
     z-index: 0;
     cursor: pointer;
   }
-  .sidenav-toggled.sidenav-toggled-open .app-sidebar .slide .side-menu__item.active::before {
-    content: '';
+  /* content: '';
     width: 3px;
     height: 31px;
     background: #005ee9;
     position: absolute;
     left: 0;
     display: block;
-  }
+  } */
 }
 
 .dark-theme .side-menu__item.active .side-menu__icon {

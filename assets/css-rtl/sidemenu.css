@@ -1168,8 +1168,7 @@ slide is-expanded side-menu__item {
     opacity: inherit !important;
     z-index: 0;
     cursor: pointer; }
-  .sidenav-toggled.sidenav-toggled-open .app-sidebar .slide .side-menu__item.active::before {
-    content: '';
+  content: '';
     width: 3px;
     height: 31px;
     background: #005ee9;
