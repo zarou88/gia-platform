@@ -1161,15 +1161,9 @@ slide is-expanded side-menu__item {
     opacity: inherit !important;
     z-index: 0;
     cursor: pointer; }
-  content: '';
-    width: 3px;
-    height: 31px;
-    background: #005ee9;
-    position: absolute;
-    right: 0;
-    display: block; }
+
   .app.sidenav-toggled .side-menu__item {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;

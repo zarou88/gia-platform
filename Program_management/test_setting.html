@@ -1,77 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
 		<meta charset="UTF-8">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
-		<meta name="Author" content="Spruko Technologies Private Limited">
-		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
-
+		<meta name="Author" content="Mohammed Technologies Private Limited">
 		<!-- Title -->
-		<title> create_programme</title>
+		<title>single programme</title>
+		<!-- Favicon -->
+		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
 
 		<!-- Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@400&display=swap" rel="stylesheet">
 
-		<!-- Favicon -->
-		<link rel="icon" href="../assets/img/brand/favicon.png" type="image/x-icon"/>
-
 		<!-- Icons css -->
 		<link href="../assets/css/icons.css" rel="stylesheet">
 
-		<!-- Internal Select2 css -->
-		<link href="../assets/plugins/select2/css/select2.min.css" rel="stylesheet">
-
-		<!--Internal  Datetimepicker-slider css -->
-		<link href="../assets/plugins/amazeui-datetimepicker/css/amazeui.datetimepicker.css" rel="stylesheet">
-		
-		<!-- Internal Spectrum-colorpicker css -->
-		<link href="../assets/plugins/spectrum-colorpicker/spectrum.css" rel="stylesheet">
-
-		<!--  Right-sidemenu css -->
-		<link href="../assets/plugins/sidebar/sidebar.css" rel="stylesheet">
-
 		<!-- Sidemenu css -->
 		<link rel="stylesheet" href="../assets/css-rtl/sidemenu.css">
-
 		<!--  Custom Scroll bar-->
 		<link href="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
 
 		<!--- Style css-->
 		<link href="../assets/css-rtl/style.css" rel="stylesheet">
-		<link href="../assets/css-rtl/style-dark.css" rel="stylesheet">
-
+	
 		<!---Skinmodes css-->
 		<link href="../assets/css-rtl/skin-modes.css" rel="stylesheet" />
 
 		<!--- Animations css-->
 		<link href="../assets/css/animate.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="../assets/plugins/wizards/css/form-elements.css">
-        <link rel="stylesheet" href="../assets/plugins/wizards/css/style.css">
-		<link rel="stylesheet" href="../assets/plugins/select_mul/css/style.css">
-		<link rel="stylesheet" href="../assets/plugins/select_mul/css/semantic.min.css">
-
-
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+		<style>
+			.repetTest{ display:none; }
+		</style>
 	</head>
-
 	<body class="main-body app sidebar-mini">
 		<!-- Loader -->
 		<div id="global-loader">
 			<img src="../assets/img/loader.svg" class="loader-img" alt="Loader">
 		</div>
 		<!-- /Loader -->
-		
 		<!-- Page -->
 		<div class="page">
 		
-			<!-- main-sidebar -->
+			<!--start main-sidebar -->
 			<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 			<aside class="app-sidebar sidebar-scroll">
 				<div class="main-sidebar-header active">
@@ -133,7 +107,7 @@
 					</div>
 				</div>
 			</aside>
-			<!-- main-sidebar -->
+			<!--end main-sidebar -->
 
 			<!-- main-content -->
 			<div class="main-content app-content">
@@ -379,404 +353,104 @@
 					</div>
 					
 				
-					<!-- breadcrumb -->
-				    <div class="breadcrumb-header  d-flex justify-content-between bg-white mt-0 p-2 mr-0" style="border-top: 1px solid #00000030;">
-				    	<div class="left-content mt-2">
-				    		<nav aria-label="breadcrumb">
-								<ol class="breadcrumb breadcrumb-style1">
-									<li class="breadcrumb-item">
-										<a href="../index.html" class="text-muted">الرئيسية</a>
-									</li>
-									<li class="breadcrumb-item">
-										<a href="#">البرامج</a>
-									</li>
-								</ol>
-							</nav>
-				    	</div>
-				    	<div class="main-dashboard-header-right">
-				    		<!-- <div class=" d-flex">
-								<button class="btn btn-outline-light"> طباعة <i class="icon ion-ios-print"></i></button>
-								<button class="btn btn-outline-light mr-1"> تصدير <i class="ti-stats-up project"></i></button>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1"> +  انشاء برنامج</button>
-				    		</div> -->
-				    	</div>
-				    </div>
-				    <!-- /breadcrumb -->
+					
 				</div>
 				<!-- /main-header -->
-				<br><br><br><br>
+
+
+				
 				<!-- container opened -->
-				<div class="container-fluid mt-5">
-
-					<!-- row -->
-					<div class="row">
-						<div class="col-lg-12 col-md-12">
-							<div class="card">
-								<div class="card-body">
-									<!-- form opend -->
-									<form role="form" action="" method="post" class="f1">
-										<!--open one pag    -->
-										<fieldset>
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example">اسم البرنامج</label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="example">محتوي 1 </label>
-													<input class="form-control"  required="" type="text">	
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-3">
-													<label for="example">اسم العميل</label>
-													<input class="form-control"  required="" type="text" value="This is input">
-												</div>
-												<div class="col-lg-3">
-													<label for="example">اسم المستخدم</label>
-													<div class="input-group mb-3">
-														<div class="input-group-prepend">
-															<span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account-search"></i></span>
-														</div><input aria-describedby="basic-addon1" aria-label="Username" class="form-control" type="text">
-													</div>										
-												</div>
-	
-												<div class="col-lg-6">
-													<p class="mg-b-10">محتوي 2</p>
-													<input class="form-control"  required="" type="text">
-												</div>
-											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-3 mb-3">
-													<label for="example"> يبدأ في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+				<div class="container-fluid">
+					<div class="row mt-5 mb-5">
+						<div class="col">
+							<div class="card signup  wd-xl-700 m-auto p-xl-1 p-sm-0">
+								<h5 class="card-header text-center">اعدادات الاختبار</h5>
+								<div class="card-body" id="cartprogramme">
+									<div class="row">
+										<div class="col">
+											<!-- <div class=""> -->
+												<!-- Demo content-->
+												<div class="card-sigin">
+													<!-- <div class="main-signup-header"> -->
+														<form action="#">
+															<div class="row">
+																<div class="col-12 form-group">
+																	<label for="dic"> وصف الاختبار </label>
+																	<textarea class="form-control" id="dic" rows="2"></textarea>
+																</div>
+																<div class="col-6 form-group">
+																	<label for="dic"> وحدة الوقت </label>
+																	<select class="form-control">
+																		<option value=""> دقائق </option>
+																		<option value=""> ساعات </option>
+																		<option value=""> ايام </option>
+																	</select>
+																</div>
+																<div class="col-6 form-group">
+																	<label for="tim"> مدة المسابقة </label>
+																	<input class="form-control" id="tim" type="number">
+																</div>
+																<div class="col-6 form-group">
+																	<label for="sw1"> أظهر الإجابة الصحيحة </label>
+																	<label class="switch">
+																		<input type="checkbox" class="toggle-switch" value="" checked id="sw1"><span class="sliderswitch round"></span>
+																	</label>
+																</div>
+																<div class="col-6">
+																	<label for="sw2"> أسئلة عشوائية	</label>
+																	<label class="switch">
+																		<input type="checkbox" class="toggle-switch" value="" id="sw2"><span class="sliderswitch round"></span>
+																	</label>
+																</div>
+																<div class="col-12 form-group">
+																	<label for="dic"> اعادة الاختبار </label>
+																	<select class="form-control" id="sectionChooser">
+																		<option value=""> لا </option>
+																		<option value="repetTestId"> نعم </option>
+																	</select>
+																</div>
 															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
-												</div>
-	
-												<div class="col-lg-3 mb-3">
-													<label for="example"> ينتهي في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
+															<div class="repetTest" id="repetTestId">
+																<div class="row">
+																	<div class="col-6 form-group">
+																		<label for="tim"> نسبة الاختبار </label>
+																		<input class="form-control" id="tim" type="number">
+																	</div>
+																	<div class="col-6 form-group">
+																		<label for="rp">  عدد الاعادة المسموح بة </label>
+																		<input class="form-control" id="rp" type="number">
+																	</div>
+																</div>
+
 															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
-												</div>
-	
-												<div class="col-lg-6">
-													<div class="inline w-100 field">
-														<label> صلاحيات الوصول1 </label>
-														<select name="skills" multiple="" class="label ui selection fluid dropdown">
-															<option value="2">
-																انطلق نحو علم الادارة
-															</option>
-															<option value="1">
-																انطلق نحو علم الادارة
-															</option>	
-															<option value="3">
-																انطلق نحو علم الادارة
-															</option>
+															<div class="flex-end d-flex mt-5">
+																<button class="btn btn-warning-gradient btn-with-icon btn-sm"> حفظ الاعدادات  <i class="bi bi-floppy"></i></button>
+															</div>
+															<!-- <button type="submit" class="btn bg-warning-gradient d-block m-auto">انشاء حساب</button> -->
+														</form>
+														
+													<!-- </div> -->
 															
-														  
-														</select>
-													</div>
-													<!-- <p class="mg-b-10">صلاحيات الوصول 1</p>
-													<select class="form-control select2" multiple="multiple">
-														<option selected value="Firefox">
-															محمد سعيد 
-														</option>
-														<option value="Chrome">
-															احمد علي
-														</option>
-													</select> -->
-												</div>
-											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 col-md-12 col-sm-12">
-													<p class="mg-b-10">حدد قالب الدعوة</p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															G001
-														</option>	
-													</select>
-												</div>
-	
-												<div class="col-lg-6 col-md-12 col-sm-12">
 													
-													<p class="mg-b-10">طريقة التواصل</p>
-													<select class="form-control select2">
-													    <option value="Firefox">
-													    	واتس اب
-													    </option>	
-													</select>
-													
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> طريقة التسجيل </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															كيو ان عند الحضور
-														</option>	
-													</select>
-												</div>
-	
-												<div class="col-lg-6">
-													<p class="mg-b-10">  طريقة الحضور </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															عن بعد
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-	
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6">
-													<p class="mg-b-10">  عرض اسم المدعو </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row">
-												<div class="col-lg-6">
-													<p>هوية العرض</p>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												
-												<div class="col-lg-6 mb-3">
-													<label for="example"> اللون </label>
-													<input class="form-control" required="" type="text">
-												</div>
-												
-												<div class="col-lg-3 mb-3">
-													<label for="example"> ملف الشعار </label>
-													<div class="custom-file">
-														<input class="custom-file-input" id="customFile" type="file">
-														<label class="custom-file-label" for="customFile">Drop files here⇬</label>
-													</div>
-												</div>
-												<div class="col-lg-3">
-													<label for="example"> ملف البرنامج </label>
-													<div class="custom-file">
-														<input class="custom-file-input" type="file">
-														<label class="custom-file-label" for="customFile">Drop files here⇬</label>
-													</div>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<br>
-
-											<div class="f1-buttons d-flex justify-content-between mt-5">
-												<button type="button" class="btn btn-previous" disabled><i class="ti-angle-double-right"></i> السابق </button>
-
-												<!-- point steps open -->
-												<div class="f1-steps d-flex justify-content-evenly">
-													<div class="f1-step">
-														<div class="f1-step-icon"></div>
-													</div>
-													<div class="f1-step active">
-														<div class="f1-step-icon"></div>	
-													</div>
-												</div>
-									            <!-- point steps closed -->
-												<button class="btn-next btn btn-warning-gradient btn-with-icon mr-1">التالي</button>	
-											</div>
-										</fieldset>
-			                            <!--closed pag  one   -->
+												</div><!-- End -->
+											<!-- </div> -->
+										</div><!-- End -->
 
 
-										<!--open pag two   -->
-										<fieldset>
+									</div>
 
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> اسم الدورة </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<p class="mg-b-10"> لغة الدورة  </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															العربية
-												        </option>
-														<option value="Firefox">
-															الانجليزية
-												        </option>		
-													</select>
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> الفئة </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="example"> عدد المقاعد المتاحة </label>
-													<input class="form-control" required="" type="text">	
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6 mb-3">
-													<label for="example"> يبدأ في </label>
-													<div class="input-group">
-														<div class="input-group-prepend">
-															<div class="input-group-text">
-																<i class="typcn typcn-calendar-outline tx-24 lh--9 op-6"></i>
-															</div>
-														</div><input class="form-control fc-datepicker" placeholder="MM/DD/YYYY" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> هل يوجد اختبار </p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-														<option value="Firefox">
-															لا
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row mb-3">
-												<div class="col-lg-6">
-													<label for="example"> المدة </label>
-													<input class="form-control"  required="" type="text" value="This is input">
-												</div>
-												<div class="col-lg-6 mb-3">
-													<p class="mg-b-10"> هل يوجد شهادة</p>
-													<select class="form-control select2">
-														<option value="Firefox">
-															نعم
-														</option>	
-														<option value="Firefox">
-															لا
-														</option>	
-													</select>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<div class="form-group has-success mg-b-0">
-														<label for="example"> اسم المدرب </label>
-														<input class="form-control"  required="" type="text">
-													</div>
-												</div>
-												<div class="col-lg-6 mg-t-20 mg-lg-t-0">
-													<label for="example"> نسبة الحصول على الشهادة  </label>
-													<input class="form-control" required="" type="number">	
-												</div>
-											</div>
-	                                        <!-- closed row -->
-
-
-											<!-- row -->
-											<div class="row row-sm mb-3">
-												<div class="col-lg-6">
-													<label for="example"> اسم المنسق </label>
-													<input class="form-control"  required="" type="text">
-												</div>
-												<div class="col-lg-6">
-													<label for="example"> شروط اضافية  </label>
-													<div class="row">
-														<div class="col-lg-5">
-															<label class="ckbox"><input type="checkbox"><span>ملى استبيان الحضور</span></label>
-														</div>
-														<div class="col-lg-4 mg-t-20 mg-lg-t-0">
-															<label class="ckbox"><input checked="" type="checkbox"><span> صورة شخصية </span></label>
-														</div>
-														<div class="col-lg-3 mg-t-20 mg-lg-t-0">
-															<label class="ckbox"><input disabled="" type="checkbox"><span> دراسة </span></label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<!-- closed row -->
-
-											<br>
-											<div class="f1-buttons d-flex justify-content-between mt-5">
-												<button type="button" class="btn btn-previous"><i class="ti-angle-double-right"></i> السابق </button>
-												<!-- point steps open -->
-												<div class="f1-steps d-flex justify-content-evenly">
-													<div class="f1-step activated">
-														<div class="f1-step-icon "></div>
-													</div>
-													<div class="f1-step activated">
-														<div class="f1-step-icon "></div>	
-													</div>
-												</div>
-									            <!-- point steps closed -->
-												<button class="btn-next btn btn-warning-gradient btn-with-icon mr-1">التالي</button>	
-											</div>
-										</fieldset>
-										<!--closed pag tow   -->
-									</form>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- closed row -->
-
-				</div>
+					
+				
+			</div>
 				<!-- container closed -->
 			</div>
-			<!-- main-content closed -->
+			<!-- Container closed -->
 
-
-			
+		
 			<!-- Footer opened -->
 			<div class="main-footer ht-40">
 				<div class="container-fluid pd-t-0-f ht-100p">
@@ -784,86 +458,49 @@
 				</div>
 			</div>
 			<!-- Footer closed -->
-			
+
+
+
 		</div>
 		<!-- End Page -->
 
 		<!-- Back-to-top -->
-		<a href="#top" id="back-to-top"><i class="ti-angle-double-up"></i></a>
-
-
+		<a href="#top" id="back-to-top"><i class="las la-angle-double-up"></i></a>
+		<!--end Back-to-top -->
 		<!-- JQuery min js -->
 		<script src="../assets/plugins/jquery/jquery.min.js"></script>
-
-		<!--Internal  Datepicker js -->
-		<script src="../assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
-
 		<!-- Bootstrap Bundle js -->
 		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Ionicons js -->
-		<script src="../assets/plugins/ionicons/ionicons.js"></script>
-
-		<!-- Moment js -->
-		<script src="../assets/plugins/moment/moment.js"></script>
-
-		<!--Internal  jquery.maskedinput date js -->
-		<script src="../assets/plugins/jquery.maskedinput/jquery.maskedinput.js"></script>
-
-		<!--Internal  spectrum-colorpicker js -->
-		<script src="../assets/plugins/spectrum-colorpicker/spectrum.js"></script>
 		
-		<!--Internal  jquery-simple-datetimepicker js -->
-		<script src="../assets/plugins/amazeui-datetimepicker/js/amazeui.datetimepicker.min.js"></script>
-
-		<!--Internal  pickerjs js -->
-		<script src="../assets/plugins/pickerjs/picker.min.js"></script>
-
+		<!--Internal Sparkline js -->
+		<!-- <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> -->
+		
+		<!-- Custom Scroll bar Js-->
+		<script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 		<!-- Rating js-->
 		<script src="../assets/plugins/rating/jquery.rating-stars.js"></script>
-		<script src="../assets/plugins/rating/jquery.barrating.js"></script>
-
 		<!-- P-scroll js -->
 		<script src="../assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 		<script src="../assets/plugins/perfect-scrollbar/p-scroll.js"></script>
-
-		<!-- Custom Scroll bar Js-->
-		<script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-		<!-- Left-menu js-->
-		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
-
-		
-		<!-- Internal Select2.min js -->
-		<script src="../assets/plugins/select2/js/select2.min.js"></script>
-
-		<!-- Right-sidebar js -->
+		<!-- Horizontalmenu js-->
 		<script src="../assets/plugins/sidebar/sidebar-rtl.js"></script>
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
-
-		<!-- eva-icons js -->
-		<script src="../assets/js/eva-icons.min.js"></script>
-
 		<!-- Sticky js -->
 		<script src="../assets/js/sticky.js"></script>
-		<script src="../assets/js/modal-popup.js"></script>
-
+		<!-- Left-menu js-->
+		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
+		<!--Internal  index js -->
+		<script src="../assets/js/index.js"></script>
 		<!-- custom js -->
 		<script src="../assets/js/custom.js"></script>
-
-		<!-- Internal form-elements js -->
-		<script src="../assets/js/form-elements.js"></script>
-
-        <!-- wizard -->
-        <script src="../assets/plugins/wizards/js/jquery.backstretch.min.js"></script>
-        <script src="../assets/js/jquery.backstretch.min.js"></script>
-        <script src="../assets/plugins/wizards/js/retina-1.1.0.min.js"></script>
-        <script src="../assets/plugins/wizards/js/scripts.js"></script>
-        
-        <!-- select mul -->
-        <script src="../assets/plugins/select_mul/js/semantic.min.js"></script>
-        <script src="../assets/plugins/select_mul/js/main.js"></script>
-
+		<script>
+			$('#sectionChooser').change(function(){
+            var myID = $(this).val();
+            $('.repetTest').each(function(){
+                myID === $(this).attr('id') ? $(this).show() : $(this).hide();
+            });
+        });
+		</script>
 
 	</body>
 </html>

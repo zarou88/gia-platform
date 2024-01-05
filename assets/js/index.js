@@ -545,3 +545,50 @@ $(function() {
 	
 });
 
+
+
+
+// setting
+// $(document).ready(function () {
+//     // تحميل حالة العناصر من Local Storage عند تحميل الصفحة
+//     $('.vc-switch-input').each(function () {
+//         var divId = $(this).attr('id');
+//         var storedState = localStorage.getItem(divId);
+
+//         // تحميل حالة العنصر
+//         if (storedState === 'hidden') {
+//             $('.' + divId).css('display', 'none');
+//             $(this).prop('checked', true);
+//         } else {
+//             $('.' + divId).css('display', 'block');
+//             $(this).prop('checked', false);
+//         }
+
+//         // تحميل حالة الشيك بوكس
+//         var storedCheckboxState = localStorage.getItem('checkboxState');
+//         $('#checkboxId').prop('checked', storedCheckboxState === 'checked');
+//     });
+
+//     // عند تغيير حالة العنصر
+//     $('.vc-switch-input').on('change', function () {
+//         var divId = $(this).attr('id');
+//         var isChecked = $(this).prop('checked');
+
+//         // حفظ حالة العنصر في Local Storage
+//         localStorage.setItem(divId, isChecked ? 'hidden' : 'visible');
+
+//         if (isChecked) {
+//             $('.' + divId).css('display', 'none');
+//         } else {
+//             $('.' + divId).css('display', 'block');
+//         }
+//     });
+
+//     // عند تغيير حالة الشيك بوكس
+//     $('#'+divId).on('change', function () {
+//         var isChecked = $(this).prop('checked');
+
+//         // حفظ حالة الشيك بوكس في Local Storage
+//         localStorage.setItem('checkboxState', isChecked ? 'checked' : 'unchecked');
+//     });
+// });

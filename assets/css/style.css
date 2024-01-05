@@ -3500,7 +3500,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-warning-gradient {
   color: #fff;
-  background: linear-gradient(to left, #efa65f, #f76a2d);
+  background:  #e4611d;
   border: 1px solid #efa65f; }
   .btn-warning-gradient:hover {
     color: #fff;

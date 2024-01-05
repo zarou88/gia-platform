@@ -32,15 +32,6 @@
 		<!--- Animations css-->
 		<link href="../assets/css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
-
-		<style>
-			.scrollable-menu {
-    height: auto;
-    max-height: 100%;
-    overflow-x: hidden;
-}
-		</style>
 	</head>
 	<body class="main-body app sidebar-mini">
 		<!-- Loader -->
@@ -69,12 +60,12 @@
 							<li class="slide">
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="typcn typcn-folder tx-22"></i><span class="side-menu__label mr-3">ادارة البرامج</span><i class="angle fe fe-chevron-down"></i></a>
 								<ul class="slide-menu  ">
-									<li class=""><a class="slide-item" href="table_program_management.html"> البرامج </a></li>
-									<li class=""><a class="slide-item" href="view_programmes.html"> الدورات التدريبية </a></li>
+									<li class=""><a class="slide-item" href="../Program_management/table_program_management.html"> البرامج </a></li>
+									<li class=""><a class="slide-item" href="../Program_management/view_programmes.html"> الدورات التدريبية </a></li>
 								</ul>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item"  href="main_tests.html"><i class="far fa-file-alt tx-22"></i><span class="side-menu__label mr-3">الأسئلة والاستبيانات</span><i class=""></i></a>
+								<a class="side-menu__item"  href="../Program_management/main_tests.html"><i class="far fa-file-alt tx-22"></i><span class="side-menu__label mr-3">الأسئلة والاستبيانات</span><i class=""></i></a>
 								
 							</li>
 							<li class="slide">
@@ -86,7 +77,7 @@
 								</ul>
 							</li>
 							<li class="slide">
-								<a class="side-menu__item" href="members.html"><i class="typcn typcn-group-outline tx-22"></i><span class="side-menu__label mr-3">ادارة المشتركين</span><i class=""></i></a>
+								<a class="side-menu__item" href="../Program_management/members.html"><i class="typcn typcn-group-outline tx-22"></i><span class="side-menu__label mr-3">ادارة المشتركين</span><i class=""></i></a>
 								
 							</li>
 							<li class="slide">
@@ -97,13 +88,18 @@
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="icon ion-ios-stats tx-22"></i><span class="side-menu__label mr-3">التقارير</span><i class=""></i></a>
 								
 							</li>
-							
-
-							
 						</ul>
 						<ul class="side-menu pb-2">
-							<li class="slide ">
-								<a class="side-menu__item" data-toggle="slide" href="#"><i class="la la-cog tx-22"></i><span class="side-menu__label mr-3">الإعدادات</span></a>
+							<li class="slide">
+								<a class="side-menu__item " data-toggle="slide" href="#"><i class="la la-cog tx-22"></i><span class="side-menu__label mr-3"> الإعدادات </span><i class="angle fe fe-chevron-down"></i></a>
+								<ul class="slide-menu">
+									<li><a class="slide-item" href="system_settings.html"> اعدادات النظام </a></li>
+									<li><a class="slide-item" href="main_page_settings.html"> اعدادات الشاشة الرئيسية </a></li>
+									<li><a class="slide-item" href="programmes_settings.html"> اعدادات البرامج </a></li>
+									<li><a class="slide-item" href="courses_settings.html"> اعدادات الدورة </a></li>
+									<li><a class="slide-item" href="users_settings.html"> اعدادات المستخدمين </a></li>
+									<li><a class="slide-item" href="questions_and_tests_settings.html"> اعدادات الاختبارات والاسئلة </a></li>
+								</ul>
 							</li>
 							<li class="slide">
 								<a class="side-menu__item" data-toggle="slide" href="#"><i class="bx bx-log-out tx-22"></i><span class="side-menu__label mr-3">تسجيل الخروج</span></a>
@@ -359,421 +355,89 @@
 					</div>
 					
 				
-					<!-- breadcrumb -->
-				    <div class="breadcrumb-header  d-flex justify-content-between bg-white mt-0 p-2 mr-0" style="border-top: 1px solid #00000030;">
-				    	<div class="left-content mt-2">
-				    		<nav aria-label="breadcrumb">
-								<ol class="breadcrumb breadcrumb-style1">
-									<li class="breadcrumb-item">
-										<a href="../index.html" >الرئيسية</a>
-									</li>
-									<li class="breadcrumb-item">
-										<a href="table_program_management.html"class="text-muted">البرامج</a>
-									</li>
-									<li class="breadcrumb-item">
-										<a href="#" class="text-muted"> برنامج تطوير المهارات الشخصية </a>
-									</li>
-								</ol>
-							</nav>
-				    	</div>
-				    	<div class="main-dashboard-header-right ">
-				    		<div class=" d-flex flex-wrap">
-								<button class="btn btn-outline-light btn-with-icon btn-sm mr-1 btn-export mb-1"> تصدير <i class="ti-stats-up project"></i></button>
-								<button class="btn btn-outline-light btn-with-icon mr-1 mb-1"> اعدادات صفحة الويب  <i class="icon ion-ios-settings"></i></button>
-								<button class="btn btn-outline-light btn-with-icon mr-1 mb-1"> اعدادات  <i class="icon ion-ios-settings"></i></button>
-								<a href="create_programme.html" class="btn btn-warning-gradient btn-with-icon mr-1 mb-1">   اضافة دورة جديدة  <i class="bi bi-plus"></i></a>
-								<button class="btn btn-warning-gradient btn-with-icon mr-1 mb-1">  عرض صفحة الويب <i class="icon ion-ios-share-alt"></i></button>
-				    		</div>
-				    	</div>
-				    </div>
-				    <!-- /breadcrumb -->
+					
 				</div>
 				<!-- /main-header -->
 
 
-				<br><br><br><br><br>
+				
 				<!-- container opened -->
-				<div class="container-fluid mt-3">
-				<!-- row -->
-				<div class="row">
+				<div class="container-fluid">
+					<div class="row mt-5 mb-5">
+						<div class="col">
+							<div class="card signup  wd-xl-700 m-auto p-xl-2 p-sm-0">
+								<h5 class="card-header text-center mb-5">اعدادات الشاشة الرئيسية</h5>
+								<div class="card-body" id="cartprogramme">
+									<div class="row">
+										<div class="col">
+										    <div class="card-sigin">
+										    	<form action="#">
+										    		<div class="row">
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="mr-0" for="s1"> عرض عدد البرامج الكلي </label>
+										    				<div class="vc-toggle-container">
+										    					<label class="vc-switch"><input type="checkbox" id="totalNumberPrograms" class="vc-switch-input" /><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+										    				</div>
+										    			</div>
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="" for="s2"> عرض عدد البرامج القائمة </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="s2" /><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>	
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="" for="s3"> عرض عدد الدورات الكلي </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="" /><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="" for="s4"> عرض عدد الدورات القائمة </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="s4"/><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>
+														
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="" for="s5"> عرض عدد المسجلين </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="s5"/><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>
 
-					<!--open filter Top  -->
-					 <div class="col-lg-12">
-						 <div class="card mg-b-20">
-							 <div class="card-body d-flex p-3">
-								 <div class="form">
-									 <i class="fa fa-search"></i>
-									 <input type="text" class="form-control form-input" id="search-table"
-										 placeholder="بحث">
-									 <span class="right-pan"><i class="bi bi-sliders"></i></span>
-								 </div>
- 
-								 <div class="d-flex">
-									 <p class="mt-2 mr-2 d-flex"> عرض: </p>
-									 <select class="form-control select2-no-search mr-0 table-rows-number">
-										 <option value="all">
-											 الكل
-										 </option>
-										 <option value="1">
-											 1
-										 </option>
-										 <option value="2">
-											 2
-										 </option>
-										 <option value="3">
-											 3
-										 </option>
-										 <option value="10" selected>
-											 10
-										 </option>
-										 <option value="50">
-											 50
-										 </option>
-										 <option value="100">
-											 100
-										 </option>
-									 </select>
-								 </div>
 
-								 <button class="btn btn-danger btn-sm btn-with-icon mr-1 text-white btnSelectDelete"data-target="#modalDelete" data-toggle="modal" style="display: none;">حذف الصفوف المختارة <i class="bi bi-trash tx-12"></i></button>
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="ml-5" for="s6"> عرض جدول البرامج القائمة </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="s6"/><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>
 
-								 <div class="mr-auto d-block tx-20">
-									 <a href=""><i class="typcn typcn-calendar-outline"></i></a>
-									 <a href=""><i class="bi bi-grid"></i></a>
-									 <a href=""><i class="bi bi-list bg-black-9 text-white"></i></a>
-								 </div>
-							 </div>
-						 </div>
-					 </div>
-					 <!--closed filter Top  -->
- 
-					 <!-- table -->
-					<div class="col-lg-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table table-striped mg-b-0 text-md-nowrap">
-										<thead>
-											<tr class="tableHead">
-												<th><input type="checkbox" class="checkParent"></th>
-												<th>#</th>
-												<th>
-													اسم الدورة
-												</th>
-												<th>الفئة</th>
-												<th> اسم المدرب</th>
-												<th> المستوى </th>
-												<th> تاريخ البداية </th>
-												<th>المدة </th>
-												<th>لغة الدورة</th>
-												<th> عدد المسجلين </th>
-												<th> اسم المنسق </th>
-												<th>  شهادة  </th>
-												<th> نسبة الشهادة </th>
-												<th> المقاعد المتاحة </th>
-												<th> الاختبار القبلي </th>
-												<th> الاختبار البعدي </th>
-												<th> تحميل المادة </th>
-												<th> AS </th>
-												
-												
-												<!-- Filter -->
-												<td class="col-filter">
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown" class="btn btn-previous p-0"><i class="bi bi-filter-square tx-20"></i></button>
-													<div class="dropdown-menu scrollable-menu" role="menu">
-													</div>		
-												</td>
-											</tr>
-										</thead>
-										<tbody id="table-body">
-											<tr>
-												<p class="p-5 text-center d-none" id="empty-message">لا توجد
-													بيانات لعرضها</p>
-											</tr>
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
+										    			<div class="col-lg-6 col-md-6 col-sm-12 switchsetting">
+										    				<label class="ml-5" for="s7"> عرض اخر الدعوات </label>
+															<div class="vc-toggle-container">
+																<label class="vc-switch"><input type="checkbox" checked class="vc-switch-input" id="s7"/><span data-on="Yes" data-off="No" class="vc-switch-label"></span><span class="vc-handle"></span></label>
+															</div>
+										    			</div>
 													</div>
-												</td>
-											</tr>
-
-
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
-													</div>
-												</td>
-											</tr>
-
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
-													</div>
-												</td>
-											</tr>
-
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
-													</div>
-												</td>
-											</tr>
-
-
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td >على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
-													</div>
-												</td>
-											</tr>
-
-
-											<tr class="table-rows">
-												<td><input type="checkbox" class="checkChild"></td>
-												<td>1</td>
-												<td scope="row">برنامج التدريب الأساسي.</td>
-												<td>3</td>
-												<td class="client-name">على حسن على</td>
-												<td> مستوي اول </td>
-												<td>12/06/2023</td>
-												<td>5ايام</td>
-												<td> عربي </td>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<th> # </th>
-												<td class="d-flex filter-col-cell">
-													<a href="course_detales.html"><i	class="far fa-eye text-gray tx-13 ml-4"></i></i></a>
-													<!-- dropdown-menu -->
-													<button data-toggle="dropdown"
-														class="btn btn-previous btn-sm btn-block"><i
-															class="si si-options-vertical text-gray tx-12"></i></button>
-													<div class="dropdown-menu">
-														<a href="edit_course.html" class="dropdown-item"> تحرير </a>
-														<a href="" class="dropdown-item"data-target="#modalDelete" data-toggle="modal"> حذف </a>
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+													
+													
+												</form>	
+											</div>
+											<!-- End -->
+										</div>
+										<!-- End -->
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					 <!-- table -->
- 
- 
-					 <!--open filter bottom  -->
-					 <div class="col-12">
-						 <div class="card mg-b-20">
-							 <div class="card-body d-flex p-3">
-								 <ul class="pagination mb-0">												
-									 <li class="page-item"><button class="btn btn-previous" id="table-paganite-next"><i class="ti-angle-double-right"></i></button></li>
-									 <li class="page-item m-2" id="table-pages">1/10</li>
-									 <li class="page-item"><button class="btn btn-previous"  id="table-paganite-prev"><i class="ti-angle-double-left"></i></button>
-									 </li>
-								 </ul>
-								 <div class="d-flex">
-									 <div class="d-block mt-2"> عرض</div>
-									 <select class="form-control select2-no-search mr-0 table-rows-number">
-										 <option value="all">
-											 الكل
-										 </option>
-										 <option value="1">
-											 1
-										 </option>
-										 <option value="2">
-											 2
-										 </option>
-										 <option value="3">
-											 3
-										 </option>
-										 <option value="10" selected>
-											 10
-										 </option>
-										 <option value="50">
-											 50
-										 </option>
-										 <option value="100">
-											 100
-										 </option>
-									 </select>
-								 </div>
-								 <div class="mr-auto tx-15 mt-2">
-									 <span id="table-status">1-6 of 100</span>
-								 </div>
-							 </div>
-						 </div>
-					 </div>
-					 <!--closed filter bottom  -->
-				</div>
-				<!-- row closed -->
-
-					
-					
-				</div>
+			    </div>
 				<!-- container closed -->
 			</div>
 			<!-- Container closed -->
 
-		<!-- delete modal -->
-		<div class="modal" id="modalDelete">
-			<div class="modal-dialog modal-sm" role="document">
-				<div class="modal-content modal-content-demo">
-					<div class="modal-header">
-						<h5 class="modal-title"> حذف البرامج </h5><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-					</div>
-					<form action="">
-					    <div class="modal-body">
-					    	<div class="row mg-t-10">
-					    		<div class="col-12">
-									<p class="text-danger">  هل انت متأكد من عملية الحذف؟</p>
-					    			<input class="form-control" required="" type="text" hidden>
-					    		</div>	
-					    	</div>
-					    </div>
-					    <div class="modal-footer border-0">
-					    	<button class="btn btn-danger btn-with-icon" type="submit"> حذف <i class="bi bi-trash tx-12"></i></button>
-					    	<button class="btn ripple btn-secondary" data-dismiss="modal" type="button"> إلغاء </button>
-					    </div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!-- End delete modal -->
-
-			
+		
 			<!-- Footer opened -->
 			<div class="main-footer ht-40">
 				<div class="container-fluid pd-t-0-f ht-100p">
@@ -796,7 +460,7 @@
 		<script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 		
 		<!--Internal Sparkline js -->
-		<script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+		<!-- <script src="../assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script> -->
 		
 		<!-- Custom Scroll bar Js-->
 		<script src="../assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -810,7 +474,6 @@
 		<script src="../assets/plugins/sidebar/sidebar-custom.js"></script>
 		<!-- Sticky js -->
 		<script src="../assets/js/sticky.js"></script>
-		<script src="../assets/js/modal-popup.js"></script>
 		<!-- Left-menu js-->
 		<script src="../assets/plugins/side-menu/sidemenu.js"></script>
 		<!--Internal  index js -->
@@ -818,10 +481,7 @@
 		<!-- custom js -->
 		<script src="../assets/js/custom.js"></script>
 
-
-		<script src="../assets/js/table.js"></script>
-		<!-- Print Excel -->
-        <script src="../assets/js/xlsx.full.min.js"></script>
-
+		<script>
+		</script>
 	</body>
 </html>
